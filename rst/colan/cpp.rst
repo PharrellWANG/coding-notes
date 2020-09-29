@@ -777,11 +777,12 @@ Make function pointers prettier with typedef or type aliases
 Hide function pointer with a ``typedef``.
 
 .. code-block:: c++
-
+    // this declares an array of 10 elements, with each element as a function pointer,
+    // that function takes another function pointer as the arg, returns void.
     void ( *p[10] ) ( void(*)() );
 
-``p`` is an *array of 10 pointers to a function returning void and
-taking a pointer to another function that returns void and takes no
+``p`` is an *array of 10 pointers, with each pointer pointing to a function
+returning void and taking a pointer to another function that returns void and takes no
 arguments*. The cumbersome syntax is nearly indecipherable. However,
 you can simplify it considerably by using `typedef` declarations. First,
 declare a `typedef` for *pointer to a function returning void and taking no arguments*

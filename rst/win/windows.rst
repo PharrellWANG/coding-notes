@@ -1,6 +1,24 @@
 Windows
 =======
 
+dumpbin
+-------
+
+.. figure:: ../../images/dumpbin.png
+    :scale: 60%
+    :align: center
+    :alt: alternate text
+    :figclass: align-center
+
+    dumpbin example output
+
+1. dumpbin is a tool provided by visual studio, it can be used to display information about binary files. ``dumpbin /EXPORTS *.dll`` can display all the exported symbols inside dll.
+
+2. ILT: incremental link table.
+
+ref: https://docs.microsoft.com/en-us/cpp/build/reference/dumpbin-reference?view=vs-2019
+
+
 How to check SHA256
 -------------------
 
