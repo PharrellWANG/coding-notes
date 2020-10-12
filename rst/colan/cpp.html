@@ -159,56 +159,62 @@
 <li class="toctree-l3"><a class="reference internal" href="#static-keyword">2.3.1. Static Keyword</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#the-mutable-keyword">2.4. The mutable Keyword</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#about-size-t-and-ptrdiff-t">2.4.1. About size_t and ptrdiff_t</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#const-cast">2.4.2. const_cast</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#volatile">2.4.3. volatile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#const-modifier">2.4.4. const modifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pass-vars-via-ref">2.4.5. Pass vars via ref</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#play-with-strings">2.4.6. Play with strings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#function-prototyping">2.4.7. Function prototyping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#const-keyword-in-cxx">2.4. const keyword in cxx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#const-cast">2.4.1. const_cast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volatile">2.4.2. volatile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#const-modifier">2.4.3. const modifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#const-in-c-declaration">2.4.4. <cite>const</cite> in C++ declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#top-level-cv-qualifier">2.4.5. Top-level cv-qualifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#const-usage-example">2.4.6. const usage example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">2.4.7. References</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#review">2.5. Review</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">2.5.1. Multithread Synchronization</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#weak-reference">2.5.2. Weak Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#diff-between-vector-reserve-and-resize">2.5.3. Diff between vector reserve and resize</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#compare-c-strings">2.5.4. Compare C++ Strings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#end-of-file-function">2.5.5. End of File Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#type-size-t">2.5.6. Type size_t</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ascii-table">2.5.7. ASCII table</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abs-of-the-max-negative-integer">2.5.8. Abs of the max negative integer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#exit-function">2.5.9. <cite>exit</cite> function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#const-in-c-declaration">2.5.10. <cite>const</cite> in C++ declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#static-in-c">2.5.11. <cite>static</cite> in C++</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-types-in-c">2.5.12. Data types in C++</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uniform-distribution">2.5.13. Uniform distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#seed-for-random-functions">2.5.14. Seed for random functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#non-deterministic-randomness">2.5.15. Non-deterministic randomness</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hash">2.5.16. Hash</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sequence-containers-in-c">2.5.17. Sequence containers in C++</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#call-constructor-without-any-args">2.5.18. Call constructor without any args</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#big-o">2.5.19. Big O</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#function-pointer-and-typedef">2.5.20. Function pointer and typedef</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#function-pointer">2.5.21. Function pointer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#initialize-function-pointer">2.5.22. Initialize function pointer</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#call-a-function-with-function-pointer">2.5.22.1. Call a function with function pointer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#conclusion-for-function-pointer">2.5.22.2. Conclusion for function pointer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-mutable-keyword">2.5. The mutable Keyword</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#about-size-t-and-ptrdiff-t">2.5.1. About size_t and ptrdiff_t</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pass-vars-via-ref">2.5.2. Pass vars via ref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-with-strings">2.5.3. Play with strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#function-prototyping">2.5.4. Function prototyping</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#forward-declaration">2.5.23. Forward declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#difference-between-class-and-struct">2.5.24. Difference between class and struct</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#multiple-public-private-keyword-in-class-definition">2.5.25. Multiple public/private keyword in class definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#public-protected-private">2.5.26. public protected private</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#virtual">2.5.27. virtual</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#heap-vs-stack">2.5.28. Heap vs Stack</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#various-casts">2.5.29. Various Casts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others">2.5.30. Some concepts for better articulate your ideas in cpp with others</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ampersands">2.5.31. Ampersands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#linkage">2.5.32. Linkage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#review">2.6. Review</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.6.1. Multithread Synchronization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#weak-reference">2.6.2. Weak Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diff-between-vector-reserve-and-resize">2.6.3. Diff between vector reserve and resize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compare-c-strings">2.6.4. Compare C++ Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#end-of-file-function">2.6.5. End of File Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#type-size-t">2.6.6. Type size_t</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ascii-table">2.6.7. ASCII table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abs-of-the-max-negative-integer">2.6.8. Abs of the max negative integer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exit-function">2.6.9. <cite>exit</cite> function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#static-in-c">2.6.10. <cite>static</cite> in C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-types-in-c">2.6.11. Data types in C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uniform-distribution">2.6.12. Uniform distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seed-for-random-functions">2.6.13. Seed for random functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#non-deterministic-randomness">2.6.14. Non-deterministic randomness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hash">2.6.15. Hash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequence-containers-in-c">2.6.16. Sequence containers in C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#call-constructor-without-any-args">2.6.17. Call constructor without any args</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#big-o">2.6.18. Big O</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#function-pointer-and-typedef">2.6.19. Function pointer and typedef</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#function-pointer">2.6.20. Function pointer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initialize-function-pointer">2.6.21. Initialize function pointer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#call-a-function-with-function-pointer">2.6.21.1. Call a function with function pointer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conclusion-for-function-pointer">2.6.21.2. Conclusion for function pointer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#links">2.6. Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forward-declaration">2.6.22. Forward declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#difference-between-class-and-struct">2.6.23. Difference between class and struct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-public-private-keyword-in-class-definition">2.6.24. Multiple public/private keyword in class definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#public-protected-private">2.6.25. public protected private</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtual">2.6.26. virtual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heap-vs-stack">2.6.27. Heap vs Stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#various-casts">2.6.28. Various Casts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others">2.6.29. Some concepts for better articulate your ideas in cpp with others</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ampersands">2.6.30. Ampersands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linkage">2.6.31. Linkage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#links">2.7. Links</a></li>
 </ul>
 </li>
 </ul>
@@ -295,7 +301,7 @@
 <p>This page has some cpp notes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Date</dt>
-<dd class="field-odd"><p>Sep 29, 2020</p>
+<dd class="field-odd"><p>Oct 12, 2020</p>
 </dd>
 <dt class="field-even">Author</dt>
 <dd class="field-even"><p><strong>aliwang</strong></p>
@@ -323,54 +329,61 @@
 <li><p><a class="reference internal" href="#static-keyword" id="id12">Static Keyword</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#the-mutable-keyword" id="id13">The mutable Keyword</a></p>
+<li><p><a class="reference internal" href="#const-keyword-in-cxx" id="id13">const keyword in cxx</a></p>
 <ul>
-<li><p><a class="reference internal" href="#about-size-t-and-ptrdiff-t" id="id14">About size_t and ptrdiff_t</a></p></li>
-<li><p><a class="reference internal" href="#const-cast" id="id15">const_cast</a></p></li>
-<li><p><a class="reference internal" href="#volatile" id="id16">volatile</a></p></li>
-<li><p><a class="reference internal" href="#const-modifier" id="id17">const modifier</a></p></li>
-<li><p><a class="reference internal" href="#pass-vars-via-ref" id="id18">Pass vars via ref</a></p></li>
-<li><p><a class="reference internal" href="#play-with-strings" id="id19">Play with strings</a></p></li>
-<li><p><a class="reference internal" href="#function-prototyping" id="id20">Function prototyping</a></p></li>
+<li><p><a class="reference internal" href="#const-cast" id="id14">const_cast</a></p></li>
+<li><p><a class="reference internal" href="#volatile" id="id15">volatile</a></p></li>
+<li><p><a class="reference internal" href="#const-modifier" id="id16">const modifier</a></p></li>
+<li><p><a class="reference internal" href="#const-in-c-declaration" id="id17"><cite>const</cite> in C++ declaration</a></p></li>
+<li><p><a class="reference internal" href="#top-level-cv-qualifier" id="id18">Top-level cv-qualifier</a></p></li>
+<li><p><a class="reference internal" href="#const-usage-example" id="id19">const usage example</a></p></li>
+<li><p><a class="reference internal" href="#references" id="id20">References</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#review" id="id21">Review</a></p>
+<li><p><a class="reference internal" href="#the-mutable-keyword" id="id21">The mutable Keyword</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id2" id="id22">Multithread Synchronization</a></p></li>
-<li><p><a class="reference internal" href="#weak-reference" id="id23">Weak Reference</a></p></li>
-<li><p><a class="reference internal" href="#diff-between-vector-reserve-and-resize" id="id24">Diff between vector reserve and resize</a></p></li>
-<li><p><a class="reference internal" href="#compare-c-strings" id="id25">Compare C++ Strings</a></p></li>
-<li><p><a class="reference internal" href="#end-of-file-function" id="id26">End of File Function</a></p></li>
-<li><p><a class="reference internal" href="#type-size-t" id="id27">Type size_t</a></p></li>
-<li><p><a class="reference internal" href="#ascii-table" id="id28">ASCII table</a></p></li>
-<li><p><a class="reference internal" href="#abs-of-the-max-negative-integer" id="id29">Abs of the max negative integer</a></p></li>
-<li><p><a class="reference internal" href="#exit-function" id="id30"><cite>exit</cite> function</a></p></li>
-<li><p><a class="reference internal" href="#const-in-c-declaration" id="id31"><cite>const</cite> in C++ declaration</a></p></li>
-<li><p><a class="reference internal" href="#static-in-c" id="id32"><cite>static</cite> in C++</a></p></li>
-<li><p><a class="reference internal" href="#data-types-in-c" id="id33">Data types in C++</a></p></li>
-<li><p><a class="reference internal" href="#uniform-distribution" id="id34">Uniform distribution</a></p></li>
-<li><p><a class="reference internal" href="#seed-for-random-functions" id="id35">Seed for random functions</a></p></li>
-<li><p><a class="reference internal" href="#non-deterministic-randomness" id="id36">Non-deterministic randomness</a></p></li>
-<li><p><a class="reference internal" href="#hash" id="id37">Hash</a></p></li>
-<li><p><a class="reference internal" href="#sequence-containers-in-c" id="id38">Sequence containers in C++</a></p></li>
-<li><p><a class="reference internal" href="#call-constructor-without-any-args" id="id39">Call constructor without any args</a></p></li>
-<li><p><a class="reference internal" href="#big-o" id="id40">Big O</a></p></li>
-<li><p><a class="reference internal" href="#function-pointer-and-typedef" id="id41">Function pointer and typedef</a></p></li>
-<li><p><a class="reference internal" href="#function-pointer" id="id42">Function pointer</a></p></li>
-<li><p><a class="reference internal" href="#initialize-function-pointer" id="id43">Initialize function pointer</a></p></li>
-<li><p><a class="reference internal" href="#forward-declaration" id="id44">Forward declaration</a></p></li>
-<li><p><a class="reference internal" href="#difference-between-class-and-struct" id="id45">Difference between class and struct</a></p></li>
-<li><p><a class="reference internal" href="#multiple-public-private-keyword-in-class-definition" id="id46">Multiple public/private keyword in class definition</a></p></li>
-<li><p><a class="reference internal" href="#public-protected-private" id="id47">public protected private</a></p></li>
-<li><p><a class="reference internal" href="#virtual" id="id48">virtual</a></p></li>
-<li><p><a class="reference internal" href="#heap-vs-stack" id="id49">Heap vs Stack</a></p></li>
-<li><p><a class="reference internal" href="#various-casts" id="id50">Various Casts</a></p></li>
-<li><p><a class="reference internal" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others" id="id51">Some concepts for better articulate your ideas in cpp with others</a></p></li>
-<li><p><a class="reference internal" href="#ampersands" id="id52">Ampersands</a></p></li>
-<li><p><a class="reference internal" href="#linkage" id="id53">Linkage</a></p></li>
+<li><p><a class="reference internal" href="#about-size-t-and-ptrdiff-t" id="id22">About size_t and ptrdiff_t</a></p></li>
+<li><p><a class="reference internal" href="#pass-vars-via-ref" id="id23">Pass vars via ref</a></p></li>
+<li><p><a class="reference internal" href="#play-with-strings" id="id24">Play with strings</a></p></li>
+<li><p><a class="reference internal" href="#function-prototyping" id="id25">Function prototyping</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#links" id="id54">Links</a></p></li>
+<li><p><a class="reference internal" href="#review" id="id26">Review</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id2" id="id27">Multithread Synchronization</a></p></li>
+<li><p><a class="reference internal" href="#weak-reference" id="id28">Weak Reference</a></p></li>
+<li><p><a class="reference internal" href="#diff-between-vector-reserve-and-resize" id="id29">Diff between vector reserve and resize</a></p></li>
+<li><p><a class="reference internal" href="#compare-c-strings" id="id30">Compare C++ Strings</a></p></li>
+<li><p><a class="reference internal" href="#end-of-file-function" id="id31">End of File Function</a></p></li>
+<li><p><a class="reference internal" href="#type-size-t" id="id32">Type size_t</a></p></li>
+<li><p><a class="reference internal" href="#ascii-table" id="id33">ASCII table</a></p></li>
+<li><p><a class="reference internal" href="#abs-of-the-max-negative-integer" id="id34">Abs of the max negative integer</a></p></li>
+<li><p><a class="reference internal" href="#exit-function" id="id35"><cite>exit</cite> function</a></p></li>
+<li><p><a class="reference internal" href="#static-in-c" id="id36"><cite>static</cite> in C++</a></p></li>
+<li><p><a class="reference internal" href="#data-types-in-c" id="id37">Data types in C++</a></p></li>
+<li><p><a class="reference internal" href="#uniform-distribution" id="id38">Uniform distribution</a></p></li>
+<li><p><a class="reference internal" href="#seed-for-random-functions" id="id39">Seed for random functions</a></p></li>
+<li><p><a class="reference internal" href="#non-deterministic-randomness" id="id40">Non-deterministic randomness</a></p></li>
+<li><p><a class="reference internal" href="#hash" id="id41">Hash</a></p></li>
+<li><p><a class="reference internal" href="#sequence-containers-in-c" id="id42">Sequence containers in C++</a></p></li>
+<li><p><a class="reference internal" href="#call-constructor-without-any-args" id="id43">Call constructor without any args</a></p></li>
+<li><p><a class="reference internal" href="#big-o" id="id44">Big O</a></p></li>
+<li><p><a class="reference internal" href="#function-pointer-and-typedef" id="id45">Function pointer and typedef</a></p></li>
+<li><p><a class="reference internal" href="#function-pointer" id="id46">Function pointer</a></p></li>
+<li><p><a class="reference internal" href="#initialize-function-pointer" id="id47">Initialize function pointer</a></p></li>
+<li><p><a class="reference internal" href="#forward-declaration" id="id48">Forward declaration</a></p></li>
+<li><p><a class="reference internal" href="#difference-between-class-and-struct" id="id49">Difference between class and struct</a></p></li>
+<li><p><a class="reference internal" href="#multiple-public-private-keyword-in-class-definition" id="id50">Multiple public/private keyword in class definition</a></p></li>
+<li><p><a class="reference internal" href="#public-protected-private" id="id51">public protected private</a></p></li>
+<li><p><a class="reference internal" href="#virtual" id="id52">virtual</a></p></li>
+<li><p><a class="reference internal" href="#heap-vs-stack" id="id53">Heap vs Stack</a></p></li>
+<li><p><a class="reference internal" href="#various-casts" id="id54">Various Casts</a></p></li>
+<li><p><a class="reference internal" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others" id="id55">Some concepts for better articulate your ideas in cpp with others</a></p></li>
+<li><p><a class="reference internal" href="#ampersands" id="id56">Ampersands</a></p></li>
+<li><p><a class="reference internal" href="#linkage" id="id57">Linkage</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#links" id="id58">Links</a></p></li>
 </ul>
 </li>
 </ul>
@@ -415,11 +428,120 @@ then press <em>Enter</em>.</p>
 <p>C++ enforces information hiding through the namespace language feature and the access control of classes. The use of the keyword static to limit the scope of external variables is deprecated for declaring objects in namespace scope.</p>
 </div>
 </div>
+<div class="section" id="const-keyword-in-cxx">
+<h2><a class="toc-backref" href="#id13"><span class="section-number">2.4. </span>const keyword in cxx</a><a class="headerlink" href="#const-keyword-in-cxx" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="const-cast">
+<h3><a class="toc-backref" href="#id14"><span class="section-number">2.4.1. </span>const_cast</a><a class="headerlink" href="#const-cast" title="Permalink to this headline">¶</a></h3>
+<p>You are not allowed to const_cast variables that are actually const. This results in undefined behavior.
+const_cast is used to remove the const-ness from references and pointers that ultimately refer to something
+that is not const.</p>
+</div>
+<div class="section" id="volatile">
+<h3><a class="toc-backref" href="#id15"><span class="section-number">2.4.2. </span>volatile</a><a class="headerlink" href="#volatile" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="const-modifier">
+<h3><a class="toc-backref" href="#id16"><span class="section-number">2.4.3. </span>const modifier</a><a class="headerlink" href="#const-modifier" title="Permalink to this headline">¶</a></h3>
+<p>About function arguments: working with the original data raises the possibility of
+inadvertent data corruption.That’s a real problem in <strong>classic C</strong>, but ANSI C and C++’s
+<code class="docutils literal notranslate"><span class="pre">const</span></code> modifier provides a remedy.</p>
+</div>
+<div class="section" id="const-in-c-declaration">
+<h3><a class="toc-backref" href="#id17"><span class="section-number">2.4.4. </span><cite>const</cite> in C++ declaration</a><a class="headerlink" href="#const-in-c-declaration" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://duramecho.com/ComputerInformation/WhyHowCppConst.html">Ref: Why how cpp const</a></p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/8808167/c-const-correctness-and-pointer-arguments">Ref: c-const-correctness-and-pointer-arguments</a></p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/7715371/whats-the-point-of-const-pointer">Ref: what is the point of const pointer</a></p>
+<p><a class="reference external" href="https://www.geeksforgeeks.org/const-member-functions-c/">Ref: const member functions</a></p>
+<ol class="arabic simple">
+<li><p><cite>const</cite> applies to whatever is on <strong>its immediate left</strong> (other than if there is <em>nothing</em> there in which case it applies to whatever is <strong>its immediate right</strong> ).</p></li>
+<li><p>Of the possible combinations  of pointers and <cite>const</cite>, the constant pointer to a variable is useful for storage that can be changed in value but <strong>not moved in memory</strong> .</p></li>
+<li><p>const functions can be called on any type of object; Non-const functions can only be called by non-const objects.</p></li>
+</ol>
+</div>
+<div class="section" id="top-level-cv-qualifier">
+<h3><a class="toc-backref" href="#id18"><span class="section-number">2.4.5. </span>Top-level cv-qualifier</a><a class="headerlink" href="#top-level-cv-qualifier" title="Permalink to this headline">¶</a></h3>
+<p>In cxx international standard, the notation <code class="docutils literal notranslate"><span class="pre">cv</span></code> (or <code class="docutils literal notranslate"><span class="pre">cv1</span></code>, <code class="docutils literal notranslate"><span class="pre">cv2</span></code>, etc.)
+used in the description of types, represents an arbitrary set of <strong>cv-qualifiers</strong>,
+i.e., one of <code class="docutils literal notranslate"><span class="pre">const</span></code>, <code class="docutils literal notranslate"><span class="pre">volatile</span></code>, <code class="docutils literal notranslate"><span class="pre">{const,</span> <span class="pre">volatile}</span></code>, or the empty set.</p>
+<p>In cxx, a cv-qualifier that applies to the first level of a type is called a top-level
+cv-qualifier.</p>
+<p>Examples:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">const</span> <span class="pre">*volatile</span> <span class="pre">q</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">volatile</span></code>.</p></li>
+</ol>
+<p>#. <code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">const</span> <span class="pre">volatile</span> <span class="pre">*q</span></code>, the top-level cv-qualifier does not exist,
+and the cv-qualifiers <code class="docutils literal notranslate"><span class="pre">const</span></code> and <code class="docutils literal notranslate"><span class="pre">volatile</span></code> appear at the second level.</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
+</ol>
+<p>#. for a type``cv T``, e.g., <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int</span></code>, the top-level cv-qualifiers of that type
+are those denoted by cv.</p>
+<ol class="arabic simple">
+<li><p>the type corresponding to the type-id <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int&amp;</span></code> has NO top-level cv-qualifiers.</p></li>
+</ol>
+<p>#. the type corresponding to the  type-id <code class="docutils literal notranslate"><span class="pre">volatile</span> <span class="pre">int</span> <span class="pre">*</span> <span class="pre">const</span></code> has the top-level
+cv-qualifier const.</p>
+<p>#. for a class type C, the type corresponding to the type-id <code class="docutils literal notranslate"><span class="pre">void(C::*</span> <span class="pre">volatile)(int)</span> <span class="pre">const</span></code>
+has the top-level cv-qualifier volatile.</p>
+<p>The signature of a fucntion includes all cv-qualifiers appearing in that
+function’s parameter types, except for those qualifier appearing at the top-level
+of a parameter type:</p>
+<p>for example, in <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">const*</span> <span class="pre">p);</span></code>, the ocnst qualifier is not at the top-level
+in the parameter declaration, so it si part of the function’s signature.</p>
+<p>on the other hand, in <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">*</span> <span class="pre">const</span> <span class="pre">p);</span></code>, the <code class="docutils literal notranslate"><span class="pre">const</span></code> is a
+top-level cv qualifier, so it is not part of the function’s signature.
+This function has the same signature as <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">*</span> <span class="pre">p);</span></code>.</p>
+</div>
+<div class="section" id="const-usage-example">
+<h3><a class="toc-backref" href="#id19"><span class="section-number">2.4.6. </span>const usage example</a><a class="headerlink" href="#const-usage-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="nf">Method3</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Rewrite it as the completely equivalent:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// ------------------------------------------------</span>
+<span class="c1">//</span>
+<span class="c1">//  v--#1   v--#2             v--#3   v--#4   v--#5</span>
+<span class="kt">int</span> <span class="k">const</span> <span class="o">*</span> <span class="k">const</span> <span class="nf">Method3</span><span class="p">(</span><span class="kt">int</span> <span class="k">const</span> <span class="o">*</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>then read it from right to left:</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">const</span></code> member function named Method3 that takes a reference to a
+<code class="docutils literal notranslate"><span class="pre">const</span></code> pointer to an <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">const</span></code> (or a <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int</span></code>, if you prefer)
+and returns a <code class="docutils literal notranslate"><span class="pre">const</span></code> pointer to an <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">const</span></code> (const int).</p>
+<p>1. the last const (v-#5) means, this is a const member function of a class,
+instead of a freestanding function. And the const member function is not allowed
+to modify the object on which it is called. e.g., <code class="docutils literal notranslate"><span class="pre">obj.getNum()</span></code>, if <code class="docutils literal notranslate"><span class="pre">getNum()</span></code>
+is a const member function, <code class="docutils literal notranslate"><span class="pre">obj</span></code> will not be modified when <code class="docutils literal notranslate"><span class="pre">getNum</span></code> is called.
+const member functions can be called by const object or non-const object, however,
+non-const member functions can only be called by non-const object, because they could
+modify the object on which they are called. It is recommended to make as many member
+functions as const as possible.</p>
+<p>2. v–#4 says that the pointer to the left is const (it can not be changed to point
+to a different address.)</p>
+<ol class="arabic simple" start="3">
+<li><p>v–#3 says that the int to the left is const (it can not be changed to have a different value)</p></li>
+<li><p>v–#2 says that the pointer to the left is const.</p></li>
+<li><p>v–#1 says that the int to the left is const.</p></li>
+</ol>
+<p>v–#2 const is superfluous, because top-level cv-qualifier on return types of non class
+type are ignored.</p>
+</div>
+<div class="section" id="references">
+<h3><a class="toc-backref" href="#id20"><span class="section-number">2.4.7. </span>References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/24676824/where-is-the-definition-of-top-level-cv-qualifiers-in-the-c11-standard">https://stackoverflow.com/questions/24676824/where-is-the-definition-of-top-level-cv-qualifiers-in-the-c11-standard</a></p></li>
+<li><p><a class="reference external" href="http://eel.is/c++draft/basic.type.qualifier">http://eel.is/c++draft/basic.type.qualifier</a></p></li>
+</ol>
+</div>
+</div>
 <div class="section" id="the-mutable-keyword">
-<h2><a class="toc-backref" href="#id13"><span class="section-number">2.4. </span>The mutable Keyword</a><a class="headerlink" href="#the-mutable-keyword" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id21"><span class="section-number">2.5. </span>The mutable Keyword</a><a class="headerlink" href="#the-mutable-keyword" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">mutable</span></code> keyword is C++ only. It is a storage class specifier, used only on a class data member to make it modifiable even though the member is part of an object declared as const.</p>
 <div class="section" id="about-size-t-and-ptrdiff-t">
-<h3><a class="toc-backref" href="#id14"><span class="section-number">2.4.1. </span>About size_t and ptrdiff_t</a><a class="headerlink" href="#about-size-t-and-ptrdiff-t" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id22"><span class="section-number">2.5.1. </span>About size_t and ptrdiff_t</a><a class="headerlink" href="#about-size-t-and-ptrdiff-t" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.gnu.org/software/libc/manual/html_node/Important-Data-Types.html">A.4 Important Data Types</a></p></li>
 <li><p><a class="reference external" href="https://www.viva64.com/en/a/0050/">About size_t and ptrdiff_t</a></p></li>
@@ -427,23 +549,8 @@ then press <em>Enter</em>.</p>
 </ol>
 <p>std::move and std::forward</p>
 </div>
-<div class="section" id="const-cast">
-<h3><a class="toc-backref" href="#id15"><span class="section-number">2.4.2. </span>const_cast</a><a class="headerlink" href="#const-cast" title="Permalink to this headline">¶</a></h3>
-<p>You are not allowed to const_cast variables that are actually const. This results in undefined behavior.
-const_cast is used to remove the const-ness from references and pointers that ultimately refer to something
-that is not const.</p>
-</div>
-<div class="section" id="volatile">
-<h3><a class="toc-backref" href="#id16"><span class="section-number">2.4.3. </span>volatile</a><a class="headerlink" href="#volatile" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="const-modifier">
-<h3><a class="toc-backref" href="#id17"><span class="section-number">2.4.4. </span>const modifier</a><a class="headerlink" href="#const-modifier" title="Permalink to this headline">¶</a></h3>
-<p>About function arguments: working with the original data raises the possibility of
-inadvertent data corruption.That’s a real problem in <strong>classic C</strong>, but ANSI C and C++’s
-<code class="docutils literal notranslate"><span class="pre">const</span></code> modifier provides a remedy.</p>
-</div>
 <div class="section" id="pass-vars-via-ref">
-<h3><a class="toc-backref" href="#id18"><span class="section-number">2.4.5. </span>Pass vars via ref</a><a class="headerlink" href="#pass-vars-via-ref" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id23"><span class="section-number">2.5.2. </span>Pass vars via ref</a><a class="headerlink" href="#pass-vars-via-ref" title="Permalink to this headline">¶</a></h3>
 <p>Passing variables via reference was a C Plus Plus addition to C.
 <a class="reference external" href="http://duramecho.com/ComputerInformation/WhyHowCppConst.html">Reference: why how cpp const</a></p>
 <p>E.G., the <cite>Subroutine1</cite> function below accepts the parameter passed to it in the default
@@ -467,12 +574,12 @@ subroutine and therefore can be written to thereby passing data back out the sub
 </div>
 </div>
 <div class="section" id="play-with-strings">
-<h3><a class="toc-backref" href="#id19"><span class="section-number">2.4.6. </span>Play with strings</a><a class="headerlink" href="#play-with-strings" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id24"><span class="section-number">2.5.3. </span>Play with strings</a><a class="headerlink" href="#play-with-strings" title="Permalink to this headline">¶</a></h3>
 <p>C uses <strong>array of chars</strong> to represent string while Cpp has a <strong>dedicated String class</strong> for manipulating strings.</p>
 <p>Meanwhile, the C-style string method is also available in C++.</p>
 </div>
 <div class="section" id="function-prototyping">
-<h3><a class="toc-backref" href="#id20"><span class="section-number">2.4.7. </span>Function prototyping</a><a class="headerlink" href="#function-prototyping" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id25"><span class="section-number">2.5.4. </span>Function prototyping</a><a class="headerlink" href="#function-prototyping" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>In C and ANSI C, function prototyping is optional, while in C++ function prototyping is mandatory.</p></li>
 <li><p>For <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">say_hi()</span></code>, in C++, leaving the parentheses empty is the same as using the keyword <code class="docutils literal notranslate"><span class="pre">void</span></code> within the parentheses. It means the function has no arguments. While in ANSI C, leaving the parentheses empty means that you are declining to state what the arguments are. That is, it means you’re forgoing prototyping the argument list. The C++ equivalent for not identifying the argument list is to use an ellipsis: <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">say_bye(...);</span> <span class="pre">//</span> <span class="pre">C++</span> <span class="pre">abdication</span> <span class="pre">of</span> <span class="pre">responsibility</span></code>. Normally this use of an ellipsis is needed only for interfacing with C functions having a variable number of arguments, such as <code class="docutils literal notranslate"><span class="pre">printf()</span></code>.</p></li>
@@ -480,9 +587,9 @@ subroutine and therefore can be written to thereby passing data back out the sub
 </div>
 </div>
 <div class="section" id="review">
-<h2><a class="toc-backref" href="#id21"><span class="section-number">2.5. </span>Review</a><a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id26"><span class="section-number">2.6. </span>Review</a><a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id2">
-<h3><a class="toc-backref" href="#id22"><span class="section-number">2.5.1. </span>Multithread Synchronization</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id27"><span class="section-number">2.6.1. </span>Multithread Synchronization</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>refs</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.geeksforgeeks.org/mutex-lock-for-linux-thread-synchronization/">https://www.geeksforgeeks.org/mutex-lock-for-linux-thread-synchronization/</a></p></li>
@@ -496,7 +603,7 @@ subroutine and therefore can be written to thereby passing data back out the sub
 原文链接：<a class="reference external" href="https://blog.csdn.net/s_lisheng/article/details/74278765">https://blog.csdn.net/s_lisheng/article/details/74278765</a></p>
 </div>
 <div class="section" id="weak-reference">
-<h3><a class="toc-backref" href="#id23"><span class="section-number">2.5.2. </span>Weak Reference</a><a class="headerlink" href="#weak-reference" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id28"><span class="section-number">2.6.2. </span>Weak Reference</a><a class="headerlink" href="#weak-reference" title="Permalink to this headline">¶</a></h3>
 <p>Intent: Maintain a non-owning reference to a shared dynamically allocated object to break circular dependencies.</p>
 <p>Description:</p>
 <p>The std::weak_ptr type represents a non-owning reference to dynamically allocated object with shared ownership (std::shared_ptr). As they do not contribute to the reference count of the managed object they refer to, the object can be destroyed at any time when all std::shared_ptrs give up ownership. However, a std::weak_ptr can be converted to a std::shared_ptr to provide temporary ownership and safe access to the object.</p>
@@ -537,7 +644,7 @@ subroutine and therefore can be written to thereby passing data back out the sub
 </div>
 </div>
 <div class="section" id="diff-between-vector-reserve-and-resize">
-<h3><a class="toc-backref" href="#id24"><span class="section-number">2.5.3. </span>Diff between vector reserve and resize</a><a class="headerlink" href="#diff-between-vector-reserve-and-resize" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id29"><span class="section-number">2.6.3. </span>Diff between vector reserve and resize</a><a class="headerlink" href="#diff-between-vector-reserve-and-resize" title="Permalink to this headline">¶</a></h3>
 <p>ref: <a class="reference external" href="https://stackoverflow.com/questions/7397768/choice-between-vectorresize-and-vectorreserve">https://stackoverflow.com/questions/7397768/choice-between-vectorresize-and-vectorreserve</a></p>
 <p>The two functions do vastly different things!</p>
 <p>The resize() method (and passing argument to constructor is equivalent to that) will insert or delete appropriate number of elements to the vector to make it given size (it has optional second argument to specify their value). It will affect the size(), iteration will go over all those elements, push_back will insert after them and you can directly access them using the operator[].</p>
@@ -547,7 +654,7 @@ subroutine and therefore can be written to thereby passing data back out the sub
 <p>EDIT2: Ad question edit: If you have initial estimate, then reserve() that estimate. If it turns out to be not enough, just let the vector do it’s thing.</p>
 </div>
 <div class="section" id="compare-c-strings">
-<h3><a class="toc-backref" href="#id25"><span class="section-number">2.5.4. </span>Compare C++ Strings</a><a class="headerlink" href="#compare-c-strings" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id30"><span class="section-number">2.6.4. </span>Compare C++ Strings</a><a class="headerlink" href="#compare-c-strings" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">;</span>
 </pre></div>
 </div>
@@ -560,7 +667,7 @@ subroutine and therefore can be written to thereby passing data back out the sub
 </ol>
 </div>
 <div class="section" id="end-of-file-function">
-<h3><a class="toc-backref" href="#id26"><span class="section-number">2.5.5. </span>End of File Function</a><a class="headerlink" href="#end-of-file-function" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id31"><span class="section-number">2.6.5. </span>End of File Function</a><a class="headerlink" href="#end-of-file-function" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">eof()</span></code> is a special function provided by C++. It returns <strong>non-zero</strong>
 (meaning <code class="docutils literal notranslate"><span class="pre">true</span></code>) when there are no more data to be read from anm input
 file stream, and zero (meaning <code class="docutils literal notranslate"><span class="pre">false</span></code>) otherwise.</p>
@@ -568,7 +675,7 @@ file stream, and zero (meaning <code class="docutils literal notranslate"><span 
 processing data read from an input file stream.</p>
 </div>
 <div class="section" id="type-size-t">
-<h3><a class="toc-backref" href="#id27"><span class="section-number">2.5.6. </span>Type size_t</a><a class="headerlink" href="#type-size-t" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id32"><span class="section-number">2.6.6. </span>Type size_t</a><a class="headerlink" href="#type-size-t" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>An <strong>alias</strong> of one of the fundamental <strong>unsigned integral types</strong>. Or, we can say, <code class="docutils literal notranslate"><span class="pre">size_t</span></code> is an unsigned integral type.</p></li>
 <li><p>It is a type able to represent the size of <strong>any</strong> object in <strong>bytes</strong>.</p></li>
@@ -589,11 +696,11 @@ See also <a class="reference external" href="https://docs.microsoft.com/en-us/cp
 <p><a class="reference external" href="http://www.cplusplus.com/reference/cstring/strxfrm/">strxfrm</a></p>
 </div>
 <div class="section" id="ascii-table">
-<h3><a class="toc-backref" href="#id28"><span class="section-number">2.5.7. </span>ASCII table</a><a class="headerlink" href="#ascii-table" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33"><span class="section-number">2.6.7. </span>ASCII table</a><a class="headerlink" href="#ascii-table" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html">https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html</a></p>
 </div>
 <div class="section" id="abs-of-the-max-negative-integer">
-<h3><a class="toc-backref" href="#id29"><span class="section-number">2.5.8. </span>Abs of the max negative integer</a><a class="headerlink" href="#abs-of-the-max-negative-integer" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id34"><span class="section-number">2.6.8. </span>Abs of the max negative integer</a><a class="headerlink" href="#abs-of-the-max-negative-integer" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://stackoverflow.com/questions/11243014/why-the-absolute-value-of-the-max-negative-integer-2147483648-is-still-2147483">Reference absolute value of the max negative integer</a></p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;abs(-2147483648): %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">2147483648</span><span class="p">));</span>
 <span class="c1">//output: abs(-2147483648): -2147483648</span>
@@ -607,7 +714,7 @@ See also <a class="reference external" href="https://docs.microsoft.com/en-us/cp
 Since 2147483648 is greater than INT_MAX on implementation, then abs(-2147483648) is undefined.</p>
 </div>
 <div class="section" id="exit-function">
-<h3><a class="toc-backref" href="#id30"><span class="section-number">2.5.9. </span><cite>exit</cite> function</a><a class="headerlink" href="#exit-function" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id35"><span class="section-number">2.6.9. </span><cite>exit</cite> function</a><a class="headerlink" href="#exit-function" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://docs.microsoft.com/en-us/cpp/cpp/exit-function">Reference exit function</a></p>
 <p>The <cite>exit</cite> function, declared in the standard include file STDLIB.H, terminates a C++ program.</p>
 <p>The value supplied as an argument to exit is returned to the operating system as
@@ -628,20 +735,8 @@ explicitly call the destructor for the object, as shown here:</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="const-in-c-declaration">
-<h3><a class="toc-backref" href="#id31"><span class="section-number">2.5.10. </span><cite>const</cite> in C++ declaration</a><a class="headerlink" href="#const-in-c-declaration" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://duramecho.com/ComputerInformation/WhyHowCppConst.html">Ref: Why how cpp const</a></p>
-<p><a class="reference external" href="https://stackoverflow.com/questions/8808167/c-const-correctness-and-pointer-arguments">Ref: c-const-correctness-and-pointer-arguments</a></p>
-<p><a class="reference external" href="https://stackoverflow.com/questions/7715371/whats-the-point-of-const-pointer">Ref: what is the point of const pointer</a></p>
-<p><a class="reference external" href="https://www.geeksforgeeks.org/const-member-functions-c/">Ref: const member functions</a></p>
-<ol class="arabic simple">
-<li><p><cite>const</cite> applies to whatever is on <strong>its immediate left</strong> (other than if there is <em>nothing</em> there in which case it applies to whatever is <strong>its immediate right</strong> ).</p></li>
-<li><p>Of the possible combinations  of pointers and <cite>const</cite>, the constant pointer to a variable is useful for storage that can be changed in value but <strong>not moved in memory</strong> .</p></li>
-<li><p>const functions can be called on any type of object; Non-const functions can only be called by non-const objects.</p></li>
-</ol>
-</div>
 <div class="section" id="static-in-c">
-<h3><a class="toc-backref" href="#id32"><span class="section-number">2.5.11. </span><cite>static</cite> in C++</a><a class="headerlink" href="#static-in-c" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id36"><span class="section-number">2.6.10. </span><cite>static</cite> in C++</a><a class="headerlink" href="#static-in-c" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.cprogramming.com/tutorial/statickeyword.html">Reference static keyword</a></p>
 <p>The keyword static can be used in three major contexts:</p>
 <ol class="arabic">
@@ -689,7 +784,7 @@ explicitly call the destructor for the object, as shown here:</p>
 </ol>
 </div>
 <div class="section" id="data-types-in-c">
-<h3><a class="toc-backref" href="#id33"><span class="section-number">2.5.12. </span>Data types in C++</a><a class="headerlink" href="#data-types-in-c" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id37"><span class="section-number">2.6.11. </span>Data types in C++</a><a class="headerlink" href="#data-types-in-c" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>1 Byte == 8 Bits</p></li>
 <li><p>Bit shift</p></li>
@@ -851,7 +946,7 @@ unsigned char
 <cite>long long</cite> at least 64 bits (8 Bytes).</p>
 </div>
 <div class="section" id="uniform-distribution">
-<h3><a class="toc-backref" href="#id34"><span class="section-number">2.5.13. </span>Uniform distribution</a><a class="headerlink" href="#uniform-distribution" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id38"><span class="section-number">2.6.12. </span>Uniform distribution</a><a class="headerlink" href="#uniform-distribution" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p><a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)">Reference from Wikipedia</a></p>
 <p><strong>PDF</strong>, Probability Density Function</p>
@@ -863,7 +958,7 @@ parameters, a and b, which are its minimum and maximum values. The distribution 
 </div></blockquote>
 </div>
 <div class="section" id="seed-for-random-functions">
-<h3><a class="toc-backref" href="#id35"><span class="section-number">2.5.14. </span>Seed for random functions</a><a class="headerlink" href="#seed-for-random-functions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id39"><span class="section-number">2.6.13. </span>Seed for random functions</a><a class="headerlink" href="#seed-for-random-functions" title="Permalink to this headline">¶</a></h3>
 <p>Keywords: 1. Pseudo-random 2. True-random 3. Seed</p>
 <p><a class="reference external" href="www.random.org">Reference random</a></p>
 <p>Perhaps you have wondered how predictable machines like computers can generate randomness. In reality, most random numbers used in computer programs are <em>pseudo-random</em>, which means they are generated in a predictable fashion using a mathematical formula. This is fine for many purposes, but it may not be random in the way you expect if you’re used to dice rolls and lottery drawings.</p>
@@ -880,7 +975,7 @@ parameters, a and b, which are its minimum and maximum values. The distribution 
 </ol>
 </div>
 <div class="section" id="non-deterministic-randomness">
-<h3><a class="toc-backref" href="#id36"><span class="section-number">2.5.15. </span>Non-deterministic randomness</a><a class="headerlink" href="#non-deterministic-randomness" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id40"><span class="section-number">2.6.14. </span>Non-deterministic randomness</a><a class="headerlink" href="#non-deterministic-randomness" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.m.wikipedia.org/wiki/Nondeterministic_algorithm">Reference nondeterministic algorithm</a></p>
 <p>In <a class="reference external" href="https://en.m.wikipedia.org/wiki/Computer_science">computer science</a>, a <strong>nondeterministic algorithm</strong> is an <a class="reference external" href="https://en.m.wikipedia.org/wiki/Algorithm">algorithm</a> that, even for the same input, can exhibit different behaviors on different runs, as opposed to a <a class="reference external" href="https://en.m.wikipedia.org/wiki/Deterministic_algorithm">deterministic algorithm</a>.</p>
 <p><a class="reference external" href="http://en.cppreference.com/w/cpp/numeric/random/random_device">std::random_device</a> is a <strong>non-deterministic uniform random number generator</strong>, although implementations are allowed to implement <a class="reference external" href="http://en.cppreference.com/w/cpp/numeric/random/random_device">std::random_device</a> using a pseudo-random number engine if there is no support for non-deterministic random number generation. (It is usually <strong>just used to seed a pseudo-random generator</strong>, since the underlying device wil usually run out of entropy quickly.)</p>
@@ -978,31 +1073,31 @@ parameters, a and b, which are its minimum and maximum values. The distribution 
 </div>
 </div>
 <div class="section" id="hash">
-<h3><a class="toc-backref" href="#id37"><span class="section-number">2.5.16. </span>Hash</a><a class="headerlink" href="#hash" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id41"><span class="section-number">2.6.15. </span>Hash</a><a class="headerlink" href="#hash" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.tutorialspoint.com/java/java_hashset_class.html">Reference java hashset class</a></p>
 <p>A hash table stores information by using a mechanism called <strong>hashing</strong>. In hashing, the informational content of a key is used to determine a <strong>unique</strong> value, called its hash code.</p>
 </div>
 <div class="section" id="sequence-containers-in-c">
-<h3><a class="toc-backref" href="#id38"><span class="section-number">2.5.17. </span>Sequence containers in C++</a><a class="headerlink" href="#sequence-containers-in-c" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id42"><span class="section-number">2.6.16. </span>Sequence containers in C++</a><a class="headerlink" href="#sequence-containers-in-c" title="Permalink to this headline">¶</a></h3>
 <p>Keywords: classes of <cite>vector</cite>,` deque`, <cite>list</cite></p>
 <p>Those sequence containers are also known as <strong>data structures</strong>.</p>
 <p><a class="reference external" href="https://baptiste-wicht.com/posts/2012/12/cpp-benchmark-vector-list-deque.html">A good benchmark article about vector, deque and list</a> (Pay attention to the conclusion section in this article if you prefer a quick read)</p>
 <p><a class="reference external" href="https://stackoverflow.com/questions/9650254/stl-containers-diffrence-between-vector-list-and-deque">STL Containers - diffrence between vector, list and deque</a></p>
 </div>
 <div class="section" id="call-constructor-without-any-args">
-<h3><a class="toc-backref" href="#id39"><span class="section-number">2.5.18. </span>Call constructor without any args</a><a class="headerlink" href="#call-constructor-without-any-args" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id43"><span class="section-number">2.6.17. </span>Call constructor without any args</a><a class="headerlink" href="#call-constructor-without-any-args" title="Permalink to this headline">¶</a></h3>
 <p>When the parser sees <code class="docutils literal notranslate"><span class="pre">MyClass</span> <span class="pre">myObj();</span></code>, it thinks you are trying to declare a function called <code class="docutils literal notranslate"><span class="pre">myObj</span></code> that has no parameters and returns a <code class="docutils literal notranslate"><span class="pre">MyClass</span></code>.</p>
 <p>The <strong>correct</strong> way is: <code class="docutils literal notranslate"><span class="pre">MyClass</span> <span class="pre">myObj</span></code> where parentheses do not occur.</p>
 </div>
 <div class="section" id="big-o">
-<h3><a class="toc-backref" href="#id40"><span class="section-number">2.5.19. </span>Big O</a><a class="headerlink" href="#big-o" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id44"><span class="section-number">2.6.18. </span>Big O</a><a class="headerlink" href="#big-o" title="Permalink to this headline">¶</a></h3>
 <p>It costs <cite>O(logn)</cite> time for a binary search on <cite>n</cite> numbers,</p>
 </div>
 <div class="section" id="function-pointer-and-typedef">
-<h3><a class="toc-backref" href="#id41"><span class="section-number">2.5.20. </span>Function pointer and typedef</a><a class="headerlink" href="#function-pointer-and-typedef" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id45"><span class="section-number">2.6.19. </span>Function pointer and typedef</a><a class="headerlink" href="#function-pointer-and-typedef" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="function-pointer">
-<h3><a class="toc-backref" href="#id42"><span class="section-number">2.5.21. </span>Function pointer</a><a class="headerlink" href="#function-pointer" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id46"><span class="section-number">2.6.20. </span>Function pointer</a><a class="headerlink" href="#function-pointer" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.learncpp.com/cpp-tutorial/78-function-pointers/">ref from learncpp.com</a></p>
 <p>A pointer is a variable that holds the address of another variable. Function pointers are similar,
 except that instead of pointing to variables, they point to functions.</p>
@@ -1032,7 +1127,7 @@ Consider a few examples:</p>
 </div>
 </div>
 <div class="section" id="initialize-function-pointer">
-<h3><a class="toc-backref" href="#id43"><span class="section-number">2.5.22. </span>Initialize function pointer</a><a class="headerlink" href="#initialize-function-pointer" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id47"><span class="section-number">2.6.21. </span>Initialize function pointer</a><a class="headerlink" href="#initialize-function-pointer" title="Permalink to this headline">¶</a></h3>
 <p>Initialize function pointer with function name, without braces.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">foo</span><span class="p">(){</span><span class="k">return</span> <span class="mi">5</span><span class="p">;}</span>
 <span class="kt">int</span> <span class="nf">goo</span><span class="p">(){</span><span class="k">return</span> <span class="mi">6</span><span class="p">;}</span>
@@ -1047,7 +1142,7 @@ Consider a few examples:</p>
 function <code class="docutils literal notranslate"><span class="pre">goo()</span></code> to ptr, which is not what we want.</p>
 <p>The type (parameters and return type) of the function pointer must match the type of the function.</p>
 <div class="section" id="call-a-function-with-function-pointer">
-<h4><span class="section-number">2.5.22.1. </span>Call a function with function pointer<a class="headerlink" href="#call-a-function-with-function-pointer" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.6.21.1. </span>Call a function with function pointer<a class="headerlink" href="#call-a-function-with-function-pointer" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">)(</span><span class="kt">int</span><span class="p">)</span> <span class="o">=</span> <span class="n">foo</span><span class="p">;</span>
 <span class="n">ptr</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>     <span class="c1">// call function foo(5) via implicit dereferencing.</span>
 <span class="p">(</span><span class="o">*</span><span class="n">ptr</span><span class="p">)(</span><span class="mi">5</span><span class="p">);</span>  <span class="c1">// call function foo via explicit dereferencing.</span>
@@ -1057,12 +1152,12 @@ function <code class="docutils literal notranslate"><span class="pre">goo()</spa
 <p>The implicit dereference method looks just like a normal function call – which is what you’d expect, since normal function names are pointers to functions anyway! However, some older compilers do not support the implicit dereference method, but all modern compilers should.</p>
 <p>Default parameters won’t work for functions called through function pointers. Default parameters are resolved at compile-time (that is, if you don’t supply an argument for a defaulted parameter, the compiler substitutes one in for you when the code is compiled). However, function pointers are resolved at run-time. Consequently, default parameters can not be resolved when making a function call with a function pointer. You’ll explicitly have to pass in values for any defaulted parameters in this case.</p>
 <div class="section" id="passing-functions-as-arguments-to-other-function">
-<h5><span class="section-number">2.5.22.1.1. </span>Passing functions as arguments to other function<a class="headerlink" href="#passing-functions-as-arguments-to-other-function" title="Permalink to this headline">¶</a></h5>
+<h5><span class="section-number">2.6.21.1.1. </span>Passing functions as arguments to other function<a class="headerlink" href="#passing-functions-as-arguments-to-other-function" title="Permalink to this headline">¶</a></h5>
 <p>One of the most useful things to do with function pointers is pass a function as an argument to another function.
 Functions used as arguments to another function are sometimes called <strong>callback functions</strong>.</p>
 </div>
 <div class="section" id="make-function-pointers-prettier-with-typedef-or-type-aliases">
-<h5><span class="section-number">2.5.22.1.2. </span>Make function pointers prettier with typedef or type aliases<a class="headerlink" href="#make-function-pointers-prettier-with-typedef-or-type-aliases" title="Permalink to this headline">¶</a></h5>
+<h5><span class="section-number">2.6.21.1.2. </span>Make function pointers prettier with typedef or type aliases<a class="headerlink" href="#make-function-pointers-prettier-with-typedef-or-type-aliases" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Let’s face it -- the syntax for pointers to functions is ugly.</span>
 <span class="c1">// However, typedefs can be used to make pointers to functions</span>
 <span class="c1">// look more like regular variables:</span>
@@ -1136,7 +1231,7 @@ declaring an array of 10 such pointers is a breeze:</p>
 </div>
 </div>
 <div class="section" id="conclusion-for-function-pointer">
-<h4><span class="section-number">2.5.22.2. </span>Conclusion for function pointer<a class="headerlink" href="#conclusion-for-function-pointer" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.6.21.2. </span>Conclusion for function pointer<a class="headerlink" href="#conclusion-for-function-pointer" title="Permalink to this headline">¶</a></h4>
 <p>Function pointers are useful primarily
 1. when you want to store functions in an array (or other structure),
 2. or when you need to pass a function to another function.</p>
@@ -1145,7 +1240,7 @@ use typedefs (or in C++11, std::function).</p>
 </div>
 </div>
 <div class="section" id="forward-declaration">
-<h3><a class="toc-backref" href="#id44"><span class="section-number">2.5.23. </span>Forward declaration</a><a class="headerlink" href="#forward-declaration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id48"><span class="section-number">2.6.22. </span>Forward declaration</a><a class="headerlink" href="#forward-declaration" title="Permalink to this headline">¶</a></h3>
 <p>“In computer programming, a forward declaration is a declaration of an identifier (denoting an entity such as a type, a variable, or a function) for which the programmer has not yet given a complete definition.”</p>
 <p>Forward declarations are often used in C++ to deal with circular relationships. For example:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">B</span><span class="p">;</span> <span class="c1">// Forward declaration</span>
@@ -1163,7 +1258,7 @@ use typedefs (or in C++11, std::function).</p>
 </div>
 </div>
 <div class="section" id="difference-between-class-and-struct">
-<h3><a class="toc-backref" href="#id45"><span class="section-number">2.5.24. </span>Difference between class and struct</a><a class="headerlink" href="#difference-between-class-and-struct" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id49"><span class="section-number">2.6.23. </span>Difference between class and struct</a><a class="headerlink" href="#difference-between-class-and-struct" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.quora.com/What-is-the-difference-between-class-and-structure-in-C++">ref from quora</a></p></li>
 <li><p><a class="reference external" href="https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.cbclx01/cplr054.htm">ref from IBM</a></p></li>
@@ -1172,7 +1267,7 @@ use typedefs (or in C++11, std::function).</p>
 </ul>
 </div>
 <div class="section" id="multiple-public-private-keyword-in-class-definition">
-<h3><a class="toc-backref" href="#id46"><span class="section-number">2.5.25. </span>Multiple public/private keyword in class definition</a><a class="headerlink" href="#multiple-public-private-keyword-in-class-definition" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id50"><span class="section-number">2.6.24. </span>Multiple public/private keyword in class definition</a><a class="headerlink" href="#multiple-public-private-keyword-in-class-definition" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">myClass</span> <span class="p">{</span>
 
     <span class="c1">// initializers etc</span>
@@ -1197,7 +1292,7 @@ use typedefs (or in C++11, std::function).</p>
 <p>It’s a good way to show the different capabilities of a class.</p>
 </div>
 <div class="section" id="public-protected-private">
-<h3><a class="toc-backref" href="#id47"><span class="section-number">2.5.26. </span>public protected private</a><a class="headerlink" href="#public-protected-private" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id51"><span class="section-number">2.6.25. </span>public protected private</a><a class="headerlink" href="#public-protected-private" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">A</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -1233,7 +1328,7 @@ use typedefs (or in C++11, std::function).</p>
 <p><a class="reference external" href="https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance">https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance</a></p>
 </div>
 <div class="section" id="virtual">
-<h3><a class="toc-backref" href="#id48"><span class="section-number">2.5.27. </span>virtual</a><a class="headerlink" href="#virtual" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id52"><span class="section-number">2.6.26. </span>virtual</a><a class="headerlink" href="#virtual" title="Permalink to this headline">¶</a></h3>
 <p>Virtual keyword in the derived class is not needed: an overrider of a member
 function that is virtual in a base class is always virtual whether you use the
 keyword or not.</p>
@@ -1254,15 +1349,15 @@ the virtual function.</p>
 3. <a class="reference external" href="http://www.stroustrup.com/bs_faq2.html#virtual-dtor">http://www.stroustrup.com/bs_faq2.html#virtual-dtor</a></p>
 </div>
 <div class="section" id="heap-vs-stack">
-<h3><a class="toc-backref" href="#id49"><span class="section-number">2.5.28. </span>Heap vs Stack</a><a class="headerlink" href="#heap-vs-stack" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id53"><span class="section-number">2.6.27. </span>Heap vs Stack</a><a class="headerlink" href="#heap-vs-stack" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap">what-and-where-are-the-stack-and-heap</a></p>
 </div>
 <div class="section" id="various-casts">
-<h3><a class="toc-backref" href="#id50"><span class="section-number">2.5.29. </span>Various Casts</a><a class="headerlink" href="#various-casts" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id54"><span class="section-number">2.6.28. </span>Various Casts</a><a class="headerlink" href="#various-casts" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://stackoverflow.com/questions/332030/when-should-static-cast-dynamic-cast-const-cast-and-reinterpret-cast-be-used">when should static_cast dynamic_cast const_cast reinterpret_cast be used</a></p>
 </div>
 <div class="section" id="some-concepts-for-better-articulate-your-ideas-in-cpp-with-others">
-<h3><a class="toc-backref" href="#id51"><span class="section-number">2.5.30. </span>Some concepts for better articulate your ideas in cpp with others</a><a class="headerlink" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id55"><span class="section-number">2.6.29. </span>Some concepts for better articulate your ideas in cpp with others</a><a class="headerlink" href="#some-concepts-for-better-articulate-your-ideas-in-cpp-with-others" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>one definition rule: it also helps to prevent violations of the one fefinition rule, the requirement that all templates, types, functrions and objects have no more than one definition in your code.</p></li>
 <li><p>include guard idiom: it has an effect similar to the include guard idiom, which uses preprocessor macro definitions to prevent multiple inclusions of the contents of the file.</p></li>
@@ -1271,11 +1366,11 @@ the virtual function.</p>
 </ol>
 </div>
 <div class="section" id="ampersands">
-<h3><a class="toc-backref" href="#id52"><span class="section-number">2.5.31. </span>Ampersands</a><a class="headerlink" href="#ampersands" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id56"><span class="section-number">2.6.30. </span>Ampersands</a><a class="headerlink" href="#ampersands" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://dev.to/sandordargo/how-to-use-ampersands-in-c-3kga">how to use ampersands in cpp</a></p>
 </div>
 <div class="section" id="linkage">
-<h3><a class="toc-backref" href="#id53"><span class="section-number">2.5.32. </span>Linkage</a><a class="headerlink" href="#linkage" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id57"><span class="section-number">2.6.31. </span>Linkage</a><a class="headerlink" href="#linkage" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>The concept of linkage does not apply to variables declared within class definitions or function bodies.</p></li>
 <li><p>The concept of linkage apply to global variables, which are defined at global or namespace scope.</p></li>
@@ -1313,7 +1408,7 @@ the virtual function.</p>
 </div>
 </div>
 <div class="section" id="links">
-<h2><a class="toc-backref" href="#id54"><span class="section-number">2.6. </span>Links</a><a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id58"><span class="section-number">2.7. </span>Links</a><a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.stroustrup.com">Bjarne Stroustrup’s homepage</a></p></li>
 <li><p><a class="reference external" href="https://github.com/isocpp/CppCoreGuidelines">Bjarne Stroustrup’s recommendation: Cpp Core Guidelines</a></p></li>
