@@ -1208,6 +1208,11 @@ Functions used as arguments to another function are sometimes called <strong>cal
 </div>
 <p><a class="reference external" href="https://stackoverflow.com/questions/516237/when-should-i-use-typedef-in-c">when-should-i-use-typedef-in-c</a></p>
 <p>Hide function pointer with a <code class="docutils literal notranslate"><span class="pre">typedef</span></code>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// this declares an array of 10 elements, with each element as a function pointer,</span>
+<span class="c1">// that function takes another function pointer as the arg, returns void.</span>
+<span class="kt">void</span> <span class="p">(</span> <span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="p">)</span> <span class="p">(</span> <span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="p">)()</span> <span class="p">);</span>
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">p</span></code> is an <em>array of 10 pointers, with each pointer pointing to a function
 returning void and taking a pointer to another function that returns void and takes no
 arguments</em>. The cumbersome syntax is nearly indecipherable. However,
