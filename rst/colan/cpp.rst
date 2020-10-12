@@ -65,22 +65,8 @@ The keyword ``static`` is the major mnechanism in C to enforce information hidin
 
 C++ enforces information hiding through the namespace language feature and the access control of classes. The use of the keyword static to limit the scope of external variables is deprecated for declaring objects in namespace scope.
 
-The mutable Keyword
-###################
-
-The ``mutable`` keyword is C++ only. It is a storage class specifier, used only on a class data member to make it modifiable even though the member is part of an object declared as const.
-
-About size_t and ptrdiff_t
-**************************
-
-1. `A.4 Important Data Types <https://www.gnu.org/software/libc/manual/html_node/Important-Data-Types.html>`_
-
-2. `About size_t and ptrdiff_t <https://www.viva64.com/en/a/0050/>`_
-
-3. `Why do you need a "ptrdiff_t" type, why isn't "size_t" sufficient? <https://news.ycombinator.com/item?id=10080165>`_
-
-std::move and std::forward
-
+const keyword in cxx
+####################
 
 const_cast
 **********
@@ -98,6 +84,141 @@ const modifier
 About function arguments: working with the original data raises the possibility of
 inadvertent data corruption.That’s a real problem in **classic C**, but ANSI C and C++’s
 ``const`` modifier provides a remedy.
+
+
+`const` in C++ declaration
+**************************
+`Ref: Why how cpp const <http://duramecho.com/ComputerInformation/WhyHowCppConst.html>`_
+
+`Ref: c-const-correctness-and-pointer-arguments <https://stackoverflow.com/questions/8808167/c-const-correctness-and-pointer-arguments>`_
+
+`Ref: what is the point of const pointer <https://stackoverflow.com/questions/7715371/whats-the-point-of-const-pointer>`_
+
+`Ref: const member functions <https://www.geeksforgeeks.org/const-member-functions-c/>`_
+
+1. `const` applies to whatever is on **its immediate left** (other than if there is *nothing* there in which case it applies to whatever is **its immediate right** ).
+
+2. Of the possible combinations  of pointers and `const`, the constant pointer to a variable is useful for storage that can be changed in value but **not moved in memory** .
+
+3. const functions can be called on any type of object; Non-const functions can only be called by non-const objects.
+
+
+Top-level cv-qualifier
+**********************
+In cxx international standard, the notation ``cv`` (or ``cv1``, ``cv2``, etc.)
+used in the description of types, represents an arbitrary set of **cv-qualifiers**,
+i.e., one of ``const``, ``volatile``, ``{const, volatile}``, or the empty set.
+
+In cxx, a cv-qualifier that applies to the first level of a type is called a top-level
+cv-qualifier.
+
+Examples:
+
+#. ``T *const p``, the top-level cv-qualifier is ``const``.
+
+#. ``T const *volatile q``, the top-level cv-qualifier is ``volatile``.
+
+#. ``T const volatile *q``, the top-level cv-qualifier does not exist,
+and the cv-qualifiers ``const`` and ``volatile`` appear at the second level.
+
+#. ``T *const p``, the top-level cv-qualifier is ``const``.
+
+#. ``T *const p``, the top-level cv-qualifier is ``const``.
+
+#. ``T *const p``, the top-level cv-qualifier is ``const``.
+
+#. ``T *const p``, the top-level cv-qualifier is ``const``.
+
+#. for a type``cv T``, e.g., ``const int``, the top-level cv-qualifiers of that type
+are those denoted by cv.
+
+#. the type corresponding to the type-id ``const int&`` has NO top-level cv-qualifiers.
+
+#. the type corresponding to the  type-id ``volatile int * const`` has the top-level
+cv-qualifier const.
+
+#. for a class type C, the type corresponding to the type-id ``void(C::* volatile)(int) const``
+has the top-level cv-qualifier volatile.
+
+The signature of a fucntion includes all cv-qualifiers appearing in that
+function's parameter types, except for those qualifier appearing at the top-level
+of a parameter type:
+
+for example, in ``int f(char const* p);``, the ocnst qualifier is not at the top-level
+in the parameter declaration, so it si part of the function's signature.
+
+on the other hand, in ``int f(char * const p);``, the ``const`` is a
+top-level cv qualifier, so it is not part of the function's signature.
+This function has the same signature as ``int f(char * p);``.
+
+const usage example
+*******************
+
+.. code-block:: c++
+
+    const int* const Method3(const int* const&) const;
+
+
+Rewrite it as the completely equivalent:
+
+.. code-block:: c++
+
+    // ------------------------------------------------
+    //
+    //  v--#1   v--#2             v--#3   v--#4   v--#5
+    int const * const Method3(int const * const&) const;
+
+then read it from right to left:
+
+A ``const`` member function named Method3 that takes a reference to a
+``const`` pointer to an ``int const`` (or a ``const int``, if you prefer)
+and returns a ``const`` pointer to an ``int const`` (const int).
+
+1. the last const (v-#5) means, this is a const member function of a class,
+instead of a freestanding function. And the const member function is not allowed
+to modify the object on which it is called. e.g., ``obj.getNum()``, if ``getNum()``
+is a const member function, ``obj`` will not be modified when ``getNum`` is called.
+const member functions can be called by const object or non-const object, however,
+non-const member functions can only be called by non-const object, because they could
+modify the object on which they are called. It is recommended to make as many member
+functions as const as possible.
+
+2. v--#4 says that the pointer to the left is const (it can not be changed to point
+to a different address.)
+
+3. v--#3 says that the int to the left is const (it can not be changed to have a different value)
+
+4. v--#2 says that the pointer to the left is const.
+
+5. v--#1 says that the int to the left is const.
+
+v--#2 const is superfluous, because top-level cv-qualifier on return types of non class
+type are ignored.
+
+
+
+References
+**********
+
+1. https://stackoverflow.com/questions/24676824/where-is-the-definition-of-top-level-cv-qualifiers-in-the-c11-standard
+
+2. http://eel.is/c++draft/basic.type.qualifier
+
+The mutable Keyword
+###################
+
+The ``mutable`` keyword is C++ only. It is a storage class specifier, used only on a class data member to make it modifiable even though the member is part of an object declared as const.
+
+About size_t and ptrdiff_t
+**************************
+
+1. `A.4 Important Data Types <https://www.gnu.org/software/libc/manual/html_node/Important-Data-Types.html>`_
+
+2. `About size_t and ptrdiff_t <https://www.viva64.com/en/a/0050/>`_
+
+3. `Why do you need a "ptrdiff_t" type, why isn't "size_t" sufficient? <https://news.ycombinator.com/item?id=10080165>`_
+
+std::move and std::forward
 
 Pass vars via ref
 *****************
@@ -328,23 +449,6 @@ explicitly call the destructor for the object, as shown here:
             myInstance.~SomeClass(); // explicit destructor call
             exit(0);
         }
-
-`const` in C++ declaration
-**************************
-`Ref: Why how cpp const <http://duramecho.com/ComputerInformation/WhyHowCppConst.html>`_
-
-`Ref: c-const-correctness-and-pointer-arguments <https://stackoverflow.com/questions/8808167/c-const-correctness-and-pointer-arguments>`_
-
-`Ref: what is the point of const pointer <https://stackoverflow.com/questions/7715371/whats-the-point-of-const-pointer>`_
-
-`Ref: const member functions <https://www.geeksforgeeks.org/const-member-functions-c/>`_
-
-1. `const` applies to whatever is on **its immediate left** (other than if there is *nothing* there in which case it applies to whatever is **its immediate right** ).
-
-2. Of the possible combinations  of pointers and `const`, the constant pointer to a variable is useful for storage that can be changed in value but **not moved in memory** .
-
-3. const functions can be called on any type of object; Non-const functions can only be called by non-const objects.
-
 
 `static` in C++
 ***************
