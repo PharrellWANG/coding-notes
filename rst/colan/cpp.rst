@@ -165,16 +165,15 @@ A ``const`` member function named Method3 that takes a reference to a
 and returns a ``const`` pointer to an ``int const`` (const int).
 
 1. the last const (v-#5) means, this is a const member function of a class,
-instead of a freestanding function. And the const member function is not allowed
-to modify the object on which it is called. e.g., ``obj.getNum()``, if ``getNum()``
-is a const member function, ``obj`` will not be modified when ``getNum`` is called.
-const member functions can be called by const object or non-const object, however,
-non-const member functions can only be called by non-const object, because they could
-modify the object on which they are called. It is recommended to make as many member
-functions as const as possible.
+   instead of a freestanding function. And the const member function is not allowed
+   to modify the object on which it is called. e.g., ``obj.getNum()``, if ``getNum()``
+   is a const member function, ``obj`` will not be modified when ``getNum`` is called.
+   const member functions can be called by const object or non-const object, however,
+   non-const member functions can only be called by non-const object, because they could
+   modify the object on which they are called. It is recommended to make as many member
+   functions as const as possible.
 
-2. v--#4 says that the pointer to the left is const (it can not be changed to point
-to a different address.)
+2. v--#4 says that the pointer to the left is const (it can not be changed to point to a different address.)
 
 3. v--#3 says that the int to the left is const (it can not be changed to have a different value)
 
