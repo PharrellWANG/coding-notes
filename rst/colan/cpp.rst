@@ -118,34 +118,24 @@ Examples:
 
 #. ``T const *volatile q``, the top-level cv-qualifier is ``volatile``.
 
-#. ``T const volatile *q``, the top-level cv-qualifier does not exist,
-and the cv-qualifiers ``const`` and ``volatile`` appear at the second level.
+#. ``T const volatile *q``, the top-level cv-qualifier does not exist, and the cv-qualifiers ``const`` and ``volatile`` appear at the second level.
 
 #. ``T *const p``, the top-level cv-qualifier is ``const``.
 
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. for a type``cv T``, e.g., ``const int``, the top-level cv-qualifiers of that type
-are those denoted by cv.
+#. for a type``cv T``, e.g., ``const int``, the top-level cv-qualifiers of that type are those denoted by cv.
 
 #. the type corresponding to the type-id ``const int&`` has NO top-level cv-qualifiers.
 
-#. the type corresponding to the  type-id ``volatile int * const`` has the top-level
-cv-qualifier const.
+#. the type corresponding to the  type-id ``volatile int * const`` has the top-level cv-qualifier const.
 
-#. for a class type C, the type corresponding to the type-id ``void(C::* volatile)(int) const``
-has the top-level cv-qualifier volatile.
+#. for a class type C, the type corresponding to the type-id ``void(C::* volatile)(int) const`` has the top-level cv-qualifier volatile.
 
-The signature of a fucntion includes all cv-qualifiers appearing in that
+The signature of a function includes all cv-qualifiers appearing in that
 function's parameter types, except for those qualifier appearing at the top-level
 of a parameter type:
 
-for example, in ``int f(char const* p);``, the ocnst qualifier is not at the top-level
-in the parameter declaration, so it si part of the function's signature.
+for example, in ``int f(char const* p);``, the const qualifier is not at the top-level
+in the parameter declaration, so it is part of the function's signature.
 
 on the other hand, in ``int f(char * const p);``, the ``const`` is a
 top-level cv qualifier, so it is not part of the function's signature.
