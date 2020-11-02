@@ -1,6 +1,24 @@
 Windows
 =======
 
+change priority order of network adapters
+-----------------------------------------
+
+.. code-block:: bash
+
+    # print all adapters and their corresponding priorities
+    Get-NetIPInterface
+
+    # change priority
+    Set-NetIPInterface -InterfaceIndex 21 -InterfaceMetric 10  # lower metric value means higher priority
+
+    # reset to use autometric
+    Set-NetIPInterface -InterfaceIndex 21 -AutomaticMetric enabled
+
+
+ref: https://www.windowscentral.com/how-change-priority-order-network-adapters-windows-10
+
+
 dumpbin
 -------
 
