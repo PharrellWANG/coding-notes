@@ -1,6 +1,12 @@
 Coding Notes
 ============
 
+.. code-block:: bash
+
+    # To understand the line below see ref：https://github.com/readthedocs/sphinx_rtd_theme/issues/739#issuecomment-531595653
+
+    python -m pip install -e git+https://github.com/readthedocs/sphinx_rtd_theme.git@ab7d388448258a24f8f4fa96dccb69d24f571736#egg=sphinx_rtd_theme
+
 Development
 -----------
 

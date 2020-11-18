@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>13. HTCondor &mdash; Coding Notes latest documentation</title>
+  <title>14. HTCondor &mdash; Coding Notes latest documentation</title>
   
 
   
@@ -40,8 +40,8 @@
   <link rel="stylesheet" href="../../_static/css/aliwang-custom.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="14. OpenCV" href="opencv.html" />
-    <link rel="prev" title="12. Vim" href="vim.html" /> 
+    <link rel="next" title="15. OpenCV" href="opencv.html" />
+    <link rel="prev" title="13. Vim" href="vim.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,25 +100,26 @@
 <li class="toctree-l1"><a class="reference internal" href="android.html">1. Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker.html">2. Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac.html">3. Mac</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">4. Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ssh.html">5. SSH</a></li>
-<li class="toctree-l1"><a class="reference internal" href="zsh-shell.html">6. Zsh Shell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="supervisor.html">7. Supervisor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ports.html">8. Ports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git.html">9. Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="svn.html">10. SVN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anaconda.html">11. Anaconda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vim.html">12. Vim</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">13. HTCondor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#frequently-used-condor-commands">13.1. Frequently Used Condor Commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#using-condor">13.1.1. Using Condor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#job-management">13.1.2. Job Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="centos.html">4. CentOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">5. Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssh.html">6. SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zsh-shell.html">7. Zsh Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supervisor.html">8. Supervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ports.html">9. Ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">10. Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="svn.html">11. SVN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anaconda.html">12. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vim.html">13. Vim</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">14. HTCondor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#frequently-used-condor-commands">14.1. Frequently Used Condor Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-condor">14.1.1. Using Condor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#job-management">14.1.2. Job Management</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="opencv.html">14. OpenCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input-method.html">15. Input Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opencv.html">15. OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-method.html">16. Input Method</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Video Coding</span></p>
 <ul>
@@ -208,7 +209,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">13. </span>HTCondor</li>
+      <li><span class="section-number">14. </span>HTCondor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -228,7 +229,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="htcondor">
-<h1><span class="section-number">13. </span>HTCondor<a class="headerlink" href="#htcondor" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">14. </span>HTCondor<a class="headerlink" href="#htcondor" title="Permalink to this headline">¶</a></h1>
 <p>HTCondor is a specialized workload management system for compute intensive jobs.
 For users, HTCondor is a job scheduler.</p>
 <p>You give HTCondor a file containing commands that tell it how to run jobs.
@@ -237,9 +238,9 @@ packages up the job and ships it off to this execute machine. The jobs run,
 and output is returned to the machine that submitted the jobs.</p>
 <p>Click <a class="reference external" href="https://research.cs.wisc.edu/htcondor/description.html">HTCondor</a> to visit the official website for HTCondor.</p>
 <div class="section" id="frequently-used-condor-commands">
-<h2><span class="section-number">13.1. </span>Frequently Used Condor Commands<a class="headerlink" href="#frequently-used-condor-commands" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">14.1. </span>Frequently Used Condor Commands<a class="headerlink" href="#frequently-used-condor-commands" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="using-condor">
-<h3><span class="section-number">13.1.1. </span>Using Condor<a class="headerlink" href="#using-condor" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">14.1.1. </span>Using Condor<a class="headerlink" href="#using-condor" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>check status: <code class="docutils literal notranslate"><span class="pre">condor_status</span></code></p></li>
 <li><p>check queue: <code class="docutils literal notranslate"><span class="pre">condor_q</span></code></p></li>
@@ -249,7 +250,7 @@ and output is returned to the machine that submitted the jobs.</p>
 </ol>
 </div>
 <div class="section" id="job-management">
-<h3><span class="section-number">13.1.2. </span>Job Management<a class="headerlink" href="#job-management" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">14.1.2. </span>Job Management<a class="headerlink" href="#job-management" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Remove job:
 * <code class="docutils literal notranslate"><span class="pre">condor_rm</span> <span class="pre">[job</span> <span class="pre">number]</span></code>
@@ -272,10 +273,10 @@ and output is returned to the machine that submitted the jobs.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="opencv.html" class="btn btn-neutral float-right" title="14. OpenCV" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="opencv.html" class="btn btn-neutral float-right" title="15. OpenCV" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="vim.html" class="btn btn-neutral float-left" title="12. Vim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="vim.html" class="btn btn-neutral float-left" title="13. Vim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

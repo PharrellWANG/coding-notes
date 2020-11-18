@@ -55,6 +55,7 @@ My Coding Notes is organized into a couple sections:
    rst/unix/android
    rst/unix/docker
    rst/unix/mac
+   rst/unix/centos
    rst/unix/ubuntu
    rst/unix/ssh
    rst/unix/zsh-shell

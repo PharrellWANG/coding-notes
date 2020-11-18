@@ -293,3 +293,20 @@ Exit
 ~~~~
 
 Type ``\q`` or hit *ctrl* + *z*, or *ctrl* + *d*
+
+For CentOS
+----------
+
+Installation
+~~~~~~~~~~~~
+1. Go to `Postgresql Database server 13 pgdg download page <https://yum.postgresql.org/13/redhat/rhel-7-x86_64/repoview/postgresqldbserver13.group.html>`_, use wget to download all required rpm and yum install missing packages.
+
+2. run below commands.
+
+.. code-block:: bash
+    
+    sudo /usr/pgsql-13/bin/postgresql-13-setup initdb
+    sudo systemctl start postgresql-13
+    sudo systemctl enable postgresql-13
+    sudo -i -u postgres  # switch to postgres user
+    psql # enter console

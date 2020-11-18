@@ -118,34 +118,24 @@ Examples:
 
 #. ``T const *volatile q``, the top-level cv-qualifier is ``volatile``.
 
-#. ``T const volatile *q``, the top-level cv-qualifier does not exist,
-and the cv-qualifiers ``const`` and ``volatile`` appear at the second level.
+#. ``T const volatile *q``, the top-level cv-qualifier does not exist, and the cv-qualifiers ``const`` and ``volatile`` appear at the second level.
 
 #. ``T *const p``, the top-level cv-qualifier is ``const``.
 
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. ``T *const p``, the top-level cv-qualifier is ``const``.
-
-#. for a type``cv T``, e.g., ``const int``, the top-level cv-qualifiers of that type
-are those denoted by cv.
+#. for a type``cv T``, e.g., ``const int``, the top-level cv-qualifiers of that type are those denoted by cv.
 
 #. the type corresponding to the type-id ``const int&`` has NO top-level cv-qualifiers.
 
-#. the type corresponding to the  type-id ``volatile int * const`` has the top-level
-cv-qualifier const.
+#. the type corresponding to the  type-id ``volatile int * const`` has the top-level cv-qualifier const.
 
-#. for a class type C, the type corresponding to the type-id ``void(C::* volatile)(int) const``
-has the top-level cv-qualifier volatile.
+#. for a class type C, the type corresponding to the type-id ``void(C::* volatile)(int) const`` has the top-level cv-qualifier volatile.
 
-The signature of a fucntion includes all cv-qualifiers appearing in that
+The signature of a function includes all cv-qualifiers appearing in that
 function's parameter types, except for those qualifier appearing at the top-level
 of a parameter type:
 
-for example, in ``int f(char const* p);``, the ocnst qualifier is not at the top-level
-in the parameter declaration, so it si part of the function's signature.
+for example, in ``int f(char const* p);``, the const qualifier is not at the top-level
+in the parameter declaration, so it is part of the function's signature.
 
 on the other hand, in ``int f(char * const p);``, the ``const`` is a
 top-level cv qualifier, so it is not part of the function's signature.
@@ -175,16 +165,15 @@ A ``const`` member function named Method3 that takes a reference to a
 and returns a ``const`` pointer to an ``int const`` (const int).
 
 1. the last const (v-#5) means, this is a const member function of a class,
-instead of a freestanding function. And the const member function is not allowed
-to modify the object on which it is called. e.g., ``obj.getNum()``, if ``getNum()``
-is a const member function, ``obj`` will not be modified when ``getNum`` is called.
-const member functions can be called by const object or non-const object, however,
-non-const member functions can only be called by non-const object, because they could
-modify the object on which they are called. It is recommended to make as many member
-functions as const as possible.
+   instead of a freestanding function. And the const member function is not allowed
+   to modify the object on which it is called. e.g., ``obj.getNum()``, if ``getNum()``
+   is a const member function, ``obj`` will not be modified when ``getNum`` is called.
+   const member functions can be called by const object or non-const object, however,
+   non-const member functions can only be called by non-const object, because they could
+   modify the object on which they are called. It is recommended to make as many member
+   functions as const as possible.
 
-2. v--#4 says that the pointer to the left is const (it can not be changed to point
-to a different address.)
+2. v--#4 says that the pointer to the left is const (it can not be changed to point to a different address.)
 
 3. v--#3 says that the int to the left is const (it can not be changed to have a different value)
 

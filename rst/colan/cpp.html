@@ -100,18 +100,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../unix/android.html">1. Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unix/docker.html">2. Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unix/mac.html">3. Mac</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ubuntu.html">4. Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ssh.html">5. SSH</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/zsh-shell.html">6. Zsh Shell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/supervisor.html">7. Supervisor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ports.html">8. Ports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/git.html">9. Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/svn.html">10. SVN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/anaconda.html">11. Anaconda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/vim.html">12. Vim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/htcondor.html">13. HTCondor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/opencv.html">14. OpenCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/input-method.html">15. Input Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/centos.html">4. CentOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ubuntu.html">5. Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ssh.html">6. SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/zsh-shell.html">7. Zsh Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/supervisor.html">8. Supervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ports.html">9. Ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/git.html">10. Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/svn.html">11. SVN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/anaconda.html">12. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/vim.html">13. Vim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/htcondor.html">14. HTCondor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/opencv.html">15. OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/input-method.html">16. Input Method</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Video Coding</span></p>
 <ul>
@@ -301,7 +302,7 @@
 <p>This page has some cpp notes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Date</dt>
-<dd class="field-odd"><p>Oct 12, 2020</p>
+<dd class="field-odd"><p>Nov 18, 2020</p>
 </dd>
 <dt class="field-even">Author</dt>
 <dd class="field-even"><p><strong>aliwang</strong></p>
@@ -468,29 +469,18 @@ cv-qualifier.</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">const</span> <span class="pre">*volatile</span> <span class="pre">q</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">volatile</span></code>.</p></li>
-</ol>
-<p>#. <code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">const</span> <span class="pre">volatile</span> <span class="pre">*q</span></code>, the top-level cv-qualifier does not exist,
-and the cv-qualifiers <code class="docutils literal notranslate"><span class="pre">const</span></code> and <code class="docutils literal notranslate"><span class="pre">volatile</span></code> appear at the second level.</p>
-<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">const</span> <span class="pre">volatile</span> <span class="pre">*q</span></code>, the top-level cv-qualifier does not exist, and the cv-qualifiers <code class="docutils literal notranslate"><span class="pre">const</span></code> and <code class="docutils literal notranslate"><span class="pre">volatile</span></code> appear at the second level.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*const</span> <span class="pre">p</span></code>, the top-level cv-qualifier is <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
-</ol>
-<p>#. for a type``cv T``, e.g., <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int</span></code>, the top-level cv-qualifiers of that type
-are those denoted by cv.</p>
-<ol class="arabic simple">
+<li><p>for a type``cv T``, e.g., <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int</span></code>, the top-level cv-qualifiers of that type are those denoted by cv.</p></li>
 <li><p>the type corresponding to the type-id <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int&amp;</span></code> has NO top-level cv-qualifiers.</p></li>
+<li><p>the type corresponding to the  type-id <code class="docutils literal notranslate"><span class="pre">volatile</span> <span class="pre">int</span> <span class="pre">*</span> <span class="pre">const</span></code> has the top-level cv-qualifier const.</p></li>
+<li><p>for a class type C, the type corresponding to the type-id <code class="docutils literal notranslate"><span class="pre">void(C::*</span> <span class="pre">volatile)(int)</span> <span class="pre">const</span></code> has the top-level cv-qualifier volatile.</p></li>
 </ol>
-<p>#. the type corresponding to the  type-id <code class="docutils literal notranslate"><span class="pre">volatile</span> <span class="pre">int</span> <span class="pre">*</span> <span class="pre">const</span></code> has the top-level
-cv-qualifier const.</p>
-<p>#. for a class type C, the type corresponding to the type-id <code class="docutils literal notranslate"><span class="pre">void(C::*</span> <span class="pre">volatile)(int)</span> <span class="pre">const</span></code>
-has the top-level cv-qualifier volatile.</p>
-<p>The signature of a fucntion includes all cv-qualifiers appearing in that
+<p>The signature of a function includes all cv-qualifiers appearing in that
 function’s parameter types, except for those qualifier appearing at the top-level
 of a parameter type:</p>
-<p>for example, in <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">const*</span> <span class="pre">p);</span></code>, the ocnst qualifier is not at the top-level
-in the parameter declaration, so it si part of the function’s signature.</p>
+<p>for example, in <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">const*</span> <span class="pre">p);</span></code>, the const qualifier is not at the top-level
+in the parameter declaration, so it is part of the function’s signature.</p>
 <p>on the other hand, in <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">*</span> <span class="pre">const</span> <span class="pre">p);</span></code>, the <code class="docutils literal notranslate"><span class="pre">const</span></code> is a
 top-level cv qualifier, so it is not part of the function’s signature.
 This function has the same signature as <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">f(char</span> <span class="pre">*</span> <span class="pre">p);</span></code>.</p>
@@ -511,17 +501,16 @@ This function has the same signature as <code class="docutils literal notranslat
 <p>A <code class="docutils literal notranslate"><span class="pre">const</span></code> member function named Method3 that takes a reference to a
 <code class="docutils literal notranslate"><span class="pre">const</span></code> pointer to an <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">const</span></code> (or a <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">int</span></code>, if you prefer)
 and returns a <code class="docutils literal notranslate"><span class="pre">const</span></code> pointer to an <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">const</span></code> (const int).</p>
-<p>1. the last const (v-#5) means, this is a const member function of a class,
+<ol class="arabic simple">
+<li><p>the last const (v-#5) means, this is a const member function of a class,
 instead of a freestanding function. And the const member function is not allowed
 to modify the object on which it is called. e.g., <code class="docutils literal notranslate"><span class="pre">obj.getNum()</span></code>, if <code class="docutils literal notranslate"><span class="pre">getNum()</span></code>
 is a const member function, <code class="docutils literal notranslate"><span class="pre">obj</span></code> will not be modified when <code class="docutils literal notranslate"><span class="pre">getNum</span></code> is called.
 const member functions can be called by const object or non-const object, however,
 non-const member functions can only be called by non-const object, because they could
 modify the object on which they are called. It is recommended to make as many member
-functions as const as possible.</p>
-<p>2. v–#4 says that the pointer to the left is const (it can not be changed to point
-to a different address.)</p>
-<ol class="arabic simple" start="3">
+functions as const as possible.</p></li>
+<li><p>v–#4 says that the pointer to the left is const (it can not be changed to point to a different address.)</p></li>
 <li><p>v–#3 says that the int to the left is const (it can not be changed to have a different value)</p></li>
 <li><p>v–#2 says that the pointer to the left is const.</p></li>
 <li><p>v–#1 says that the int to the left is const.</p></li>

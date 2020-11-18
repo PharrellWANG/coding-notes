@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6. Zsh Shell &mdash; Coding Notes latest documentation</title>
+  <title>7. Zsh Shell &mdash; Coding Notes latest documentation</title>
   
 
   
@@ -40,8 +40,8 @@
   <link rel="stylesheet" href="../../_static/css/aliwang-custom.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="7. Supervisor" href="supervisor.html" />
-    <link rel="prev" title="5. SSH" href="ssh.html" /> 
+    <link rel="next" title="8. Supervisor" href="supervisor.html" />
+    <link rel="prev" title="6. SSH" href="ssh.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,26 +100,27 @@
 <li class="toctree-l1"><a class="reference internal" href="android.html">1. Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker.html">2. Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac.html">3. Mac</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">4. Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ssh.html">5. SSH</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Zsh Shell</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-install-zsh">6.1. How to install Zsh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-sh-on-macos">6.2. Run .sh on macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-sh-with-python-supervisor">6.3. Run .sh with python supervisor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#monitoring-system-resources">6.4. Monitoring system resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-inspect-the-environment-variables">6.5. How to inspect the environment variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#command-not-found-in-zsh-shell">6.6. command not found in zsh shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="centos.html">4. CentOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu.html">5. Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssh.html">6. SSH</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Zsh Shell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-install-zsh">7.1. How to install Zsh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-sh-on-macos">7.2. Run .sh on macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-sh-with-python-supervisor">7.3. Run .sh with python supervisor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#monitoring-system-resources">7.4. Monitoring system resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-inspect-the-environment-variables">7.5. How to inspect the environment variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#command-not-found-in-zsh-shell">7.6. command not found in zsh shell</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="supervisor.html">7. Supervisor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ports.html">8. Ports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git.html">9. Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="svn.html">10. SVN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anaconda.html">11. Anaconda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vim.html">12. Vim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="htcondor.html">13. HTCondor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="opencv.html">14. OpenCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input-method.html">15. Input Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supervisor.html">8. Supervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ports.html">9. Ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">10. Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="svn.html">11. SVN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anaconda.html">12. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vim.html">13. Vim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="htcondor.html">14. HTCondor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opencv.html">15. OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-method.html">16. Input Method</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Video Coding</span></p>
 <ul>
@@ -209,7 +210,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">6. </span>Zsh Shell</li>
+      <li><span class="section-number">7. </span>Zsh Shell</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -229,9 +230,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="zsh-shell">
-<h1><span class="section-number">6. </span>Zsh Shell<a class="headerlink" href="#zsh-shell" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">7. </span>Zsh Shell<a class="headerlink" href="#zsh-shell" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="how-to-install-zsh">
-<span id="zsh-important-stuff"></span><h2><span class="section-number">6.1. </span>How to install Zsh<a class="headerlink" href="#how-to-install-zsh" title="Permalink to this headline">¶</a></h2>
+<span id="zsh-important-stuff"></span><h2><span class="section-number">7.1. </span>How to install Zsh<a class="headerlink" href="#how-to-install-zsh" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>After you have installed <code class="docutils literal notranslate"><span class="pre">zsh</span></code> please copy all the things from <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> to <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> file. Otherwise lots of commands are not callable (Or simply uncomment the second line in <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>).</p>
@@ -240,7 +241,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">step</span> <span class="pre">2</span></code> Install <a class="reference external" href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> which is an open source, community-driven framework for managing your <a class="reference external" href="http://www.zsh.org">zsh</a> configuration</p>
 </div>
 <div class="section" id="run-sh-on-macos">
-<h2><span class="section-number">6.2. </span>Run .sh on macOS<a class="headerlink" href="#run-sh-on-macos" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.2. </span>Run .sh on macOS<a class="headerlink" href="#run-sh-on-macos" title="Permalink to this headline">¶</a></h2>
 <p>There are two ways for running the shell script (<code class="docutils literal notranslate"><span class="pre">.sh</span></code> file):</p>
 <ol class="arabic simple">
 <li><p>in Mac original terminal</p></li>
@@ -260,14 +261,14 @@
 </div>
 </div>
 <div class="section" id="run-sh-with-python-supervisor">
-<h2><span class="section-number">6.3. </span>Run .sh with python supervisor<a class="headerlink" href="#run-sh-with-python-supervisor" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3. </span>Run .sh with python supervisor<a class="headerlink" href="#run-sh-with-python-supervisor" title="Permalink to this headline">¶</a></h2>
 <p>In supervisor <code class="docutils literal notranslate"><span class="pre">.conf</span></code> file, you need to precede the full path of <code class="docutils literal notranslate"><span class="pre">.sh</span></code> file with <code class="docutils literal notranslate"><span class="pre">/bin/bash</span></code>, e.g,:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command: /bin/bash /home/ubuntu/zwapbe/docs.sh
 </pre></div>
 </div>
 </div>
 <div class="section" id="monitoring-system-resources">
-<h2><span class="section-number">6.4. </span>Monitoring system resources<a class="headerlink" href="#monitoring-system-resources" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.4. </span>Monitoring system resources<a class="headerlink" href="#monitoring-system-resources" title="Permalink to this headline">¶</a></h2>
 <p>You can use native <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">top</span></code>, or install <code class="docutils literal notranslate"><span class="pre">htop</span></code> (<em>an interactive process viewer for Unix</em>) and type:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ htop
 </pre></div>
@@ -280,14 +281,14 @@
 </dl>
 </div>
 <div class="section" id="how-to-inspect-the-environment-variables">
-<h2><span class="section-number">6.5. </span>How to inspect the environment variables<a class="headerlink" href="#how-to-inspect-the-environment-variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.5. </span>How to inspect the environment variables<a class="headerlink" href="#how-to-inspect-the-environment-variables" title="Permalink to this headline">¶</a></h2>
 <p>Type in terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ printenv
 </pre></div>
 </div>
 </div>
 <div class="section" id="command-not-found-in-zsh-shell">
-<h2><span class="section-number">6.6. </span>command not found in zsh shell<a class="headerlink" href="#command-not-found-in-zsh-shell" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.6. </span>command not found in zsh shell<a class="headerlink" href="#command-not-found-in-zsh-shell" title="Permalink to this headline">¶</a></h2>
 <p>You can create a symlink in <code class="docutils literal notranslate"><span class="pre">/usr/local/bin/</span></code>.</p>
 <p>E.g., after <code class="docutils literal notranslate"><span class="pre">wepy</span></code> for developing WeChat Mini Program has been installed,
 when you type <code class="docutils literal notranslate"><span class="pre">wepy</span> <span class="pre">build</span> <span class="pre">--watch</span></code> in zsh shell, it warns you <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">not</span> <span class="pre">found</span></code>.
@@ -306,10 +307,10 @@ To solve that, you need to type below command in terminal:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="supervisor.html" class="btn btn-neutral float-right" title="7. Supervisor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="supervisor.html" class="btn btn-neutral float-right" title="8. Supervisor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ssh.html" class="btn btn-neutral float-left" title="5. SSH" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ssh.html" class="btn btn-neutral float-left" title="6. SSH" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

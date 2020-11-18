@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. Ubuntu &mdash; Coding Notes latest documentation</title>
+  <title>5. Ubuntu &mdash; Coding Notes latest documentation</title>
   
 
   
@@ -40,8 +40,8 @@
   <link rel="stylesheet" href="../../_static/css/aliwang-custom.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5. SSH" href="ssh.html" />
-    <link rel="prev" title="3. Mac" href="mac.html" /> 
+    <link rel="next" title="6. SSH" href="ssh.html" />
+    <link rel="prev" title="4. CentOS" href="centos.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,78 +100,79 @@
 <li class="toctree-l1"><a class="reference internal" href="android.html">1. Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker.html">2. Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac.html">3. Mac</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Ubuntu</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#setup-proxy-for-apt-install">4.1. Setup Proxy for Apt Install</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#format-disk-as-ntfs">4.2. Format disk as NTFS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#view-all-available-partitions">4.2.1. View all available partitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="centos.html">4. CentOS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Ubuntu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup-proxy-for-apt-install">5.1. Setup Proxy for Apt Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#format-disk-as-ntfs">5.2. Format disk as NTFS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#view-all-available-partitions">5.2.1. View all available partitions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#mount-ntfs-with-read-write-permissions">4.3. Mount NTFS with Read-Write Permissions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#permanently-add-global-environment-variables">4.3.1. Permanently add global environment variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#delete-a-large-amount-of-files">4.3.2. Delete a large amount of files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#print-directory-in-terminal">4.3.3. Print directory in terminal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#find">4.3.4. find</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#disown">4.3.5. disown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rsync">4.3.6. rsync</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mount-ntfs-with-read-write-permissions">5.3. Mount NTFS with Read-Write Permissions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#permanently-add-global-environment-variables">5.3.1. Permanently add global environment variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-a-large-amount-of-files">5.3.2. Delete a large amount of files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#print-directory-in-terminal">5.3.3. Print directory in terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#find">5.3.4. find</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disown">5.3.5. disown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rsync">5.3.6. rsync</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-use-sha256sum">4.4. How to use SHA256SUM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux">4.5. How to update ubuntu packages on 18.04 Bionic Beaver Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#check-cpu-ram">4.6. check cpu ram</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#check-version">4.7. Check Version</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#old-school">4.7.1. old school</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#new">4.7.2. new</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#check-disk-space">4.7.3. Check disk space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-sha256sum">5.4. How to use SHA256SUM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux">5.5. How to update ubuntu packages on 18.04 Bionic Beaver Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-cpu-ram">5.6. check cpu ram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-version">5.7. Check Version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#old-school">5.7.1. old school</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new">5.7.2. new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#check-disk-space">5.7.3. Check disk space</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#install-latex-on-ubuntu">4.8. Install latex on ubuntu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cat-in-ubuntu">4.9. cat in Ubuntu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-copy-filename-or-current-working-dir-to-clipboard">4.10. How to copy filename or current working dir to clipboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-set-static-ip-address-for-ubuntu-server-16-4-and-do-port-forwarding">4.11. How to set static ip address for ubuntu server 16.4 and do port forwarding</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-enable-remote-ssh">4.12. How to enable remote ssh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#permission-denied-publickey">4.13. Permission denied (publickey)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#for-ssh">4.13.1. for ssh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#for-git-pull">4.13.2. for git pull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-latex-on-ubuntu">5.8. Install latex on ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cat-in-ubuntu">5.9. cat in Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-copy-filename-or-current-working-dir-to-clipboard">5.10. How to copy filename or current working dir to clipboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-set-static-ip-address-for-ubuntu-server-16-4-and-do-port-forwarding">5.11. How to set static ip address for ubuntu server 16.4 and do port forwarding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-enable-remote-ssh">5.12. How to enable remote ssh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#permission-denied-publickey">5.13. Permission denied (publickey)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#for-ssh">5.13.1. for ssh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#for-git-pull">5.13.2. for git pull</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#ssh-add">4.14. ssh-add</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-is-the-eval-command-in-bash">4.15. what is the eval command in bash</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuring-iptables-on-ubuntu-14-04">4.16. Configuring Iptables on Ubuntu 14.04</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#save">4.16.1. Save</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#restore">4.16.2. Restore</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#apply">4.16.3. Apply</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#persistent-iptables">4.16.4. Persistent Iptables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-to-solve-the-issue-of-filezilla-permission-denied">4.16.5. How to solve the issue of Filezilla permission denied</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#give-specific-user-permission-to-write-to-a-folder-using-w-notation">4.16.6. Give specific user permission to write to a folder using +w notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ssh-add">5.14. ssh-add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-the-eval-command-in-bash">5.15. what is the eval command in bash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-iptables-on-ubuntu-14-04">5.16. Configuring Iptables on Ubuntu 14.04</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#save">5.16.1. Save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restore">5.16.2. Restore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apply">5.16.3. Apply</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#persistent-iptables">5.16.4. Persistent Iptables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-solve-the-issue-of-filezilla-permission-denied">5.16.5. How to solve the issue of Filezilla permission denied</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#give-specific-user-permission-to-write-to-a-folder-using-w-notation">5.16.6. Give specific user permission to write to a folder using +w notation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#tar-compress">4.17. tar compress</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#basics">4.17.1. Basics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#advanced">4.17.2. Advanced</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#show-progress">4.17.2.1. Show progress</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#exclude-files-when-extracting">4.17.2.2. Exclude Files When Extracting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tar-compress">5.17. tar compress</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basics">5.17.1. Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#advanced">5.17.2. Advanced</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#show-progress">5.17.2.1. Show progress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exclude-files-when-extracting">5.17.2.2. Exclude Files When Extracting</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#download-upload-files-from-to-server">4.18. Download/Upload files from/to server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-is-the-difference-between-bash-profile-and-bashrc">4.19. what is the difference between .bash_profile and .bashrc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-execute-a-bash-script-at-system-startup-shutdown-reboot">4.20. How to execute a bash script at system Startup/Shutdown/Reboot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#check-the-size-of-a-folder">4.21. Check the size of a folder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-ubuntu-18-04-1-lts-with-kernel-4-19">4.22. Install Ubuntu 18.04.1 LTS with Kernel 4.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-upload-files-from-to-server">5.18. Download/Upload files from/to server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-the-difference-between-bash-profile-and-bashrc">5.19. what is the difference between .bash_profile and .bashrc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-execute-a-bash-script-at-system-startup-shutdown-reboot">5.20. How to execute a bash script at system Startup/Shutdown/Reboot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-the-size-of-a-folder">5.21. Check the size of a folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-ubuntu-18-04-1-lts-with-kernel-4-19">5.22. Install Ubuntu 18.04.1 LTS with Kernel 4.19</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ssh.html">5. SSH</a></li>
-<li class="toctree-l1"><a class="reference internal" href="zsh-shell.html">6. Zsh Shell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="supervisor.html">7. Supervisor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ports.html">8. Ports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git.html">9. Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="svn.html">10. SVN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anaconda.html">11. Anaconda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vim.html">12. Vim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="htcondor.html">13. HTCondor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="opencv.html">14. OpenCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input-method.html">15. Input Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssh.html">6. SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zsh-shell.html">7. Zsh Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supervisor.html">8. Supervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ports.html">9. Ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">10. Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="svn.html">11. SVN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anaconda.html">12. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vim.html">13. Vim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="htcondor.html">14. HTCondor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opencv.html">15. OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-method.html">16. Input Method</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Video Coding</span></p>
 <ul>
@@ -261,7 +262,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">4. </span>Ubuntu</li>
+      <li><span class="section-number">5. </span>Ubuntu</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -281,9 +282,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ubuntu">
-<h1><span class="section-number">4. </span>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="setup-proxy-for-apt-install">
-<h2><span class="section-number">4.1. </span>Setup Proxy for Apt Install<a class="headerlink" href="#setup-proxy-for-apt-install" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.1. </span>Setup Proxy for Apt Install<a class="headerlink" href="#setup-proxy-for-apt-install" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo touch /etc/apt/apt.conf.d/proxy.conf
 sudo vim /etc/apt/apt.conf.d/proxy.conf
 </pre></div>
@@ -298,7 +299,7 @@ sudo vim /etc/apt/apt.conf.d/proxy.conf
 <p>type <code class="docutils literal notranslate"><span class="pre">:wq!</span></code> to save and exit.</p>
 </div>
 <div class="section" id="format-disk-as-ntfs">
-<h2><span class="section-number">4.2. </span>Format disk as NTFS<a class="headerlink" href="#format-disk-as-ntfs" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.2. </span>Format disk as NTFS<a class="headerlink" href="#format-disk-as-ntfs" title="Permalink to this headline">¶</a></h2>
 <p>Warning: mkfs is extremely time-consuming when doing this kind of job.
 So please try to avoid using this method, just format it on windows or on mac
 using <code class="docutils literal notranslate"><span class="pre">NTFS</span> <span class="pre">for</span> <span class="pre">mac</span></code> software.</p>
@@ -318,14 +319,14 @@ sudo mkfs.ext4 /dev/sdc1
 </pre></div>
 </div>
 <div class="section" id="view-all-available-partitions">
-<h3><span class="section-number">4.2.1. </span>View all available partitions<a class="headerlink" href="#view-all-available-partitions" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.2.1. </span>View all available partitions<a class="headerlink" href="#view-all-available-partitions" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="mount-ntfs-with-read-write-permissions">
-<h2><span class="section-number">4.3. </span>Mount NTFS with Read-Write Permissions<a class="headerlink" href="#mount-ntfs-with-read-write-permissions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.3. </span>Mount NTFS with Read-Write Permissions<a class="headerlink" href="#mount-ntfs-with-read-write-permissions" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mount -t ntfs-3g /dev/sdb1 /media/aliwang/WD2020-2T
 <span class="c1"># you may need to change ``/media/aliwang/WD2020-2T`` to the right mount path</span>
 <span class="c1"># if you see error described in this link:</span>
@@ -335,14 +336,14 @@ sudo ntfsfix /dev/sdb1  <span class="c1"># only run this when your NTFS is not a
 </pre></div>
 </div>
 <div class="section" id="permanently-add-global-environment-variables">
-<h3><span class="section-number">4.3.1. </span>Permanently add global environment variables<a class="headerlink" href="#permanently-add-global-environment-variables" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.1. </span>Permanently add global environment variables<a class="headerlink" href="#permanently-add-global-environment-variables" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo vim /etc/environment
 </pre></div>
 </div>
 <p>Then add your env var.</p>
 </div>
 <div class="section" id="delete-a-large-amount-of-files">
-<h3><span class="section-number">4.3.2. </span>Delete a large amount of files<a class="headerlink" href="#delete-a-large-amount-of-files" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.2. </span>Delete a large amount of files<a class="headerlink" href="#delete-a-large-amount-of-files" title="Permalink to this headline">¶</a></h3>
 <p>When using <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code> to remote a large amount of files/dirs in a directory,
 you might receive the error of <code class="docutils literal notranslate"><span class="pre">argument</span> <span class="pre">list</span> <span class="pre">too</span> <span class="pre">long</span></code> error.</p>
 <p>Solution:
@@ -353,14 +354,14 @@ $ rsync -a --delete empty_dir/ dir_to_del/
 </div>
 </div>
 <div class="section" id="print-directory-in-terminal">
-<h3><span class="section-number">4.3.3. </span>Print directory in terminal<a class="headerlink" href="#print-directory-in-terminal" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.3. </span>Print directory in terminal<a class="headerlink" href="#print-directory-in-terminal" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">find</span> <span class="pre">.</span> <span class="pre">-type</span> <span class="pre">d</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">-e</span> <span class="pre">&quot;s/[^-][^\/]*\//</span>&#160; <span class="pre">|/g&quot;</span> <span class="pre">-e</span> <span class="pre">&quot;s/|\([^</span> <span class="pre">]\)/|-\1/&quot;</span></code></p>
 <p>This command will search recursively for directories inside the parent directory and then draw the tree of the founded directories.</p>
 <p>You may also try the following to include all of the files as well.</p>
 <p><code class="docutils literal notranslate"><span class="pre">find</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">'s|[^/]*/|-</span> <span class="pre">|g'</span></code></p>
 </div>
 <div class="section" id="find">
-<h3><span class="section-number">4.3.4. </span>find<a class="headerlink" href="#find" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.4. </span>find<a class="headerlink" href="#find" title="Permalink to this headline">¶</a></h3>
 <p>User <code class="docutils literal notranslate"><span class="pre">find</span></code> to find files recursively by file type and copy them to a directory.</p>
 <p>Folder <code class="docutils literal notranslate"><span class="pre">Enc</span></code> has two sub folders: <code class="docutils literal notranslate"><span class="pre">HM</span></code> and <code class="docutils literal notranslate"><span class="pre">csv</span></code>. You can use below method
 to collect all the csv files inside <code class="docutils literal notranslate"><span class="pre">HM</span></code> into <code class="docutils literal notranslate"><span class="pre">csv</span></code> folder:</p>
@@ -371,7 +372,7 @@ $ find . -name <span class="s2">&quot;*.csv&quot;</span> -type f -exec cp <span 
 <p>Done.</p>
 </div>
 <div class="section" id="disown">
-<h3><span class="section-number">4.3.5. </span>disown<a class="headerlink" href="#disown" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.5. </span>disown<a class="headerlink" href="#disown" title="Permalink to this headline">¶</a></h3>
 <p>Use <code class="docutils literal notranslate"><span class="pre">disown</span></code> to keep process running after ending ssh session
 <a class="reference external" href="https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session">Reference</a></p>
 <ol class="arabic simple">
@@ -385,7 +386,7 @@ $ find . -name <span class="s2">&quot;*.csv&quot;</span> -type f -exec cp <span 
 <p>Done.</p>
 </div>
 <div class="section" id="rsync">
-<h3><span class="section-number">4.3.6. </span>rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.3.6. </span>rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>rsync – a fast, versatile, remote (and local) file-copying tool</p>
@@ -422,7 +423,7 @@ $ find . -name <span class="s2">&quot;*.csv&quot;</span> -type f -exec cp <span 
 </div>
 </div>
 <div class="section" id="how-to-use-sha256sum">
-<h2><span class="section-number">4.4. </span>How to use SHA256SUM<a class="headerlink" href="#how-to-use-sha256sum" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.4. </span>How to use SHA256SUM<a class="headerlink" href="#how-to-use-sha256sum" title="Permalink to this headline">¶</a></h2>
 <p>Suppose now you have a directory, inside which you have several binary data files.
 You need to transfer those files via internet, and you want to verify the integrity of data files after transfer.</p>
 <p>Here the solution:</p>
@@ -440,7 +441,7 @@ sha256sum -c SHA256SUM
 </div>
 </div>
 <div class="section" id="how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux">
-<h2><span class="section-number">4.5. </span>How to update ubuntu packages on 18.04 Bionic Beaver Linux<a class="headerlink" href="#how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.5. </span>How to update ubuntu packages on 18.04 Bionic Beaver Linux<a class="headerlink" href="#how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt update
 $ sudo apt list --upgradable
 $ sudo apt upgrade
@@ -451,27 +452,27 @@ $ sudo apt autoremove
 <p>or <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">update</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">list</span> <span class="pre">--upgradable</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">upgrade</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">dist-upgrade</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">autoremove</span></code></p>
 </div>
 <div class="section" id="check-cpu-ram">
-<h2><span class="section-number">4.6. </span>check cpu ram<a class="headerlink" href="#check-cpu-ram" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.6. </span>check cpu ram<a class="headerlink" href="#check-cpu-ram" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/meminfo</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/cpuinfo</span></code></p>
 </div>
 <div class="section" id="check-version">
-<h2><span class="section-number">4.7. </span>Check Version<a class="headerlink" href="#check-version" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.7. </span>Check Version<a class="headerlink" href="#check-version" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="old-school">
-<h3><span class="section-number">4.7.1. </span>old school<a class="headerlink" href="#old-school" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.7.1. </span>old school<a class="headerlink" href="#old-school" title="Permalink to this headline">¶</a></h3>
 <p>The below terminal command can help you check the ubuntu release version.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lsb_release -a
 </pre></div>
 </div>
 </div>
 <div class="section" id="new">
-<h3><span class="section-number">4.7.2. </span>new<a class="headerlink" href="#new" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.7.2. </span>new<a class="headerlink" href="#new" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat /etc/os-release
 </pre></div>
 </div>
 </div>
 <div class="section" id="check-disk-space">
-<h3><span class="section-number">4.7.3. </span>Check disk space<a class="headerlink" href="#check-disk-space" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.7.3. </span>Check disk space<a class="headerlink" href="#check-disk-space" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>type <cite>df -h</cite> in terminal</p></li>
 <li><p>check a folder</p></li>
@@ -482,11 +483,11 @@ $ sudo apt autoremove
 </div>
 </div>
 <div class="section" id="install-latex-on-ubuntu">
-<h2><span class="section-number">4.8. </span>Install latex on ubuntu<a class="headerlink" href="#install-latex-on-ubuntu" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.8. </span>Install latex on ubuntu<a class="headerlink" href="#install-latex-on-ubuntu" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">texlive-full</span></code></p>
 </div>
 <div class="section" id="cat-in-ubuntu">
-<h2><span class="section-number">4.9. </span>cat in Ubuntu<a class="headerlink" href="#cat-in-ubuntu" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.9. </span>cat in Ubuntu<a class="headerlink" href="#cat-in-ubuntu" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ref</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://www.tecmint.com/13-basic-cat-command-examples-in-linux/">https://www.tecmint.com/13-basic-cat-command-examples-in-linux/</a></p>
@@ -498,7 +499,7 @@ $ sudo apt autoremove
 </div>
 </div>
 <div class="section" id="how-to-copy-filename-or-current-working-dir-to-clipboard">
-<h2><span class="section-number">4.10. </span>How to copy filename or current working dir to clipboard<a class="headerlink" href="#how-to-copy-filename-or-current-working-dir-to-clipboard" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.10. </span>How to copy filename or current working dir to clipboard<a class="headerlink" href="#how-to-copy-filename-or-current-working-dir-to-clipboard" title="Permalink to this headline">¶</a></h2>
 <p>First install <strong>xclip</strong>: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">xclip</span></code>.</p>
 <p>Then inside <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>, add</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pbcopy</span><span class="o">=</span><span class="s1">&#39;xclip -selection clipboard&#39;</span>
@@ -512,7 +513,7 @@ $ <span class="nb">alias</span> <span class="nv">pbpaste</span><span class="o">=
 </ol>
 </div>
 <div class="section" id="how-to-set-static-ip-address-for-ubuntu-server-16-4-and-do-port-forwarding">
-<h2><span class="section-number">4.11. </span>How to set static ip address for ubuntu server 16.4 and do port forwarding<a class="headerlink" href="#how-to-set-static-ip-address-for-ubuntu-server-16-4-and-do-port-forwarding" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.11. </span>How to set static ip address for ubuntu server 16.4 and do port forwarding<a class="headerlink" href="#how-to-set-static-ip-address-for-ubuntu-server-16-4-and-do-port-forwarding" title="Permalink to this headline">¶</a></h2>
 <p>Find an existing vm ubuntu server, use the <code class="docutils literal notranslate"><span class="pre">net.txt</span></code> that you get from the above step.
 And type the contents in that <code class="docutils literal notranslate"><span class="pre">net.txt</span></code> file to the <code class="docutils literal notranslate"><span class="pre">/etc/network/interfaces</span></code>. <strong>Then shutdown the vm, refresh the mac address</strong> for several times.</p>
 <p>An example provided for downloading:</p>
@@ -525,7 +526,7 @@ And type the contents in that <code class="docutils literal notranslate"><span c
 </ol>
 </div>
 <div class="section" id="how-to-enable-remote-ssh">
-<h2><span class="section-number">4.12. </span>How to enable remote ssh<a class="headerlink" href="#how-to-enable-remote-ssh" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.12. </span>How to enable remote ssh<a class="headerlink" href="#how-to-enable-remote-ssh" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ref</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://help.ubuntu.com/lts/serverguide/openssh-server.html">https://help.ubuntu.com/lts/serverguide/openssh-server.html</a></p>
@@ -554,9 +555,9 @@ And type the contents in that <code class="docutils literal notranslate"><span c
 <p>If you want to use key pair auth, please refer to links above.</p>
 </div>
 <div class="section" id="permission-denied-publickey">
-<h2><span class="section-number">4.13. </span>Permission denied (publickey)<a class="headerlink" href="#permission-denied-publickey" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.13. </span>Permission denied (publickey)<a class="headerlink" href="#permission-denied-publickey" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="for-ssh">
-<h3><span class="section-number">4.13.1. </span>for ssh<a class="headerlink" href="#for-ssh" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.13.1. </span>for ssh<a class="headerlink" href="#for-ssh" title="Permalink to this headline">¶</a></h3>
 <p>If you see a warning like <code class="docutils literal notranslate"><span class="pre">Permission</span> <span class="pre">denied</span> <span class="pre">(publickey)</span></code>, try to supply
 private key.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ssh root@www.mywebsite.com
@@ -570,7 +571,7 @@ $ ssh -i ~/.ssh/my_private_key root@www.mywebsite.com
 you can directly type <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">mywebsite</span></code>.</p>
 </div>
 <div class="section" id="for-git-pull">
-<h3><span class="section-number">4.13.2. </span>for git pull<a class="headerlink" href="#for-git-pull" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.13.2. </span>for git pull<a class="headerlink" href="#for-git-pull" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">ref</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html">https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html</a></p>
@@ -588,7 +589,7 @@ which is the authentication agent.</p>
 </div>
 </div>
 <div class="section" id="ssh-add">
-<h2><span class="section-number">4.14. </span>ssh-add<a class="headerlink" href="#ssh-add" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.14. </span>ssh-add<a class="headerlink" href="#ssh-add" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent">Could not open a connection to your authentication agent</a></p>
 <p>If you cannot successfully perform <code class="docutils literal notranslate"><span class="pre">ssh-add</span></code>, you can do this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">eval</span> <span class="sb">`</span>ssh-agent -s<span class="sb">`</span>
@@ -597,25 +598,25 @@ $ ssh-add
 </div>
 </div>
 <div class="section" id="what-is-the-eval-command-in-bash">
-<h2><span class="section-number">4.15. </span>what is the eval command in bash<a class="headerlink" href="#what-is-the-eval-command-in-bash" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.15. </span>what is the eval command in bash<a class="headerlink" href="#what-is-the-eval-command-in-bash" title="Permalink to this headline">¶</a></h2>
 <p>ref: <a class="reference external" href="https://unix.stackexchange.com/questions/23111/what-is-the-eval-command-in-bash">What is the “eval” command in bash?</a></p>
 <p>eval - construct command by concatenating arguments</p>
 </div>
 <div class="section" id="configuring-iptables-on-ubuntu-14-04">
-<h2><span class="section-number">4.16. </span>Configuring Iptables on Ubuntu 14.04<a class="headerlink" href="#configuring-iptables-on-ubuntu-14-04" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.16. </span>Configuring Iptables on Ubuntu 14.04<a class="headerlink" href="#configuring-iptables-on-ubuntu-14-04" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ref</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://www.upcloud.com/support/configuring-iptables-on-ubuntu-14-04/">https://www.upcloud.com/support/configuring-iptables-on-ubuntu-14-04/</a></p>
 </dd>
 </dl>
 <div class="section" id="save">
-<h3><span class="section-number">4.16.1. </span>Save<a class="headerlink" href="#save" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.1. </span>Save<a class="headerlink" href="#save" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo iptables-save &gt; /etc/iptables/rules.v4
 </pre></div>
 </div>
 </div>
 <div class="section" id="restore">
-<h3><span class="section-number">4.16.2. </span>Restore<a class="headerlink" href="#restore" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.2. </span>Restore<a class="headerlink" href="#restore" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Overwrite the current one</p></li>
 </ul>
@@ -630,7 +631,7 @@ $ ssh-add
 </div>
 </div>
 <div class="section" id="apply">
-<h3><span class="section-number">4.16.3. </span>Apply<a class="headerlink" href="#apply" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.3. </span>Apply<a class="headerlink" href="#apply" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo iptables-apply iptables.txt
 </pre></div>
 </div>
@@ -642,7 +643,7 @@ with the symbol of <code class="docutils literal notranslate"><span class="pre">
 </div>
 </div>
 <div class="section" id="persistent-iptables">
-<h3><span class="section-number">4.16.4. </span>Persistent Iptables<a class="headerlink" href="#persistent-iptables" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.4. </span>Persistent Iptables<a class="headerlink" href="#persistent-iptables" title="Permalink to this headline">¶</a></h3>
 <p>You can automate the restore process at the reboot by installing an  additional package for iptables which takes over the loading of the saved rules.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install iptables-persistent
 </pre></div>
@@ -651,7 +652,7 @@ with the symbol of <code class="docutils literal notranslate"><span class="pre">
 If you make further changes to your iptables rules, remember to save them again using the same command as above. The iptables-persistent looks for the files rules.v4 and rules.v6 under /etc/iptables.</p>
 </div>
 <div class="section" id="how-to-solve-the-issue-of-filezilla-permission-denied">
-<h3><span class="section-number">4.16.5. </span>How to solve the issue of Filezilla permission denied<a class="headerlink" href="#how-to-solve-the-issue-of-filezilla-permission-denied" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.5. </span>How to solve the issue of Filezilla permission denied<a class="headerlink" href="#how-to-solve-the-issue-of-filezilla-permission-denied" title="Permalink to this headline">¶</a></h3>
 <p>To allow user <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code> write access to the remote root directory, enter those commands via terminals as root user <code class="docutils literal notranslate"><span class="pre">sudo</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo chown -R ubuntu /etc/supervisor
 <span class="c1"># make sure permissions on that entire folder were correct:</span>
@@ -660,7 +661,7 @@ $ sudo chmod -R <span class="m">755</span> /etc/supervisor
 </div>
 </div>
 <div class="section" id="give-specific-user-permission-to-write-to-a-folder-using-w-notation">
-<h3><span class="section-number">4.16.6. </span>Give specific user permission to write to a folder using +w notation<a class="headerlink" href="#give-specific-user-permission-to-write-to-a-folder-using-w-notation" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.16.6. </span>Give specific user permission to write to a folder using +w notation<a class="headerlink" href="#give-specific-user-permission-to-write-to-a-folder-using-w-notation" title="Permalink to this headline">¶</a></h3>
 <p>ref: <a class="reference external" href="https://askubuntu.com/questions/487527/give-specific-user-permission-to-write-to-a-folder-using-w-notation">https://askubuntu.com/questions/487527/give-specific-user-permission-to-write-to-a-folder-using-w-notation</a></p>
 <p>If you want to change the user owning this file or
 directory (folder), you will have to use the command
@@ -676,9 +677,9 @@ directory (folder), you will have to use the command
 </div>
 </div>
 <div class="section" id="tar-compress">
-<h2><span class="section-number">4.17. </span>tar compress<a class="headerlink" href="#tar-compress" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.17. </span>tar compress<a class="headerlink" href="#tar-compress" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="basics">
-<h3><span class="section-number">4.17.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.17.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h3>
 <p><strong>compress</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /path/to/the/folder/directory
 <span class="c1"># e.g., if you want to compress folder of `myProj`, its path is `/home/ubuntu/myProj`, then you need to $ cd /home/ubuntu</span>
@@ -701,9 +702,9 @@ $ tar -zxvf archive.tar.gz -C /tmp
 </div>
 </div>
 <div class="section" id="advanced">
-<h3><span class="section-number">4.17.2. </span>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">5.17.2. </span>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="show-progress">
-<h4><span class="section-number">4.17.2.1. </span>Show progress<a class="headerlink" href="#show-progress" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">5.17.2.1. </span>Show progress<a class="headerlink" href="#show-progress" title="Permalink to this headline">¶</a></h4>
 <p>Compressing and showing progress (tested on macos):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
 <span class="c1"># -------------------------------------------------------------------------------</span>
@@ -751,7 +752,7 @@ pv <span class="s2">&quot;</span><span class="nv">$TAR_BALL</span><span class="s
 </div>
 </div>
 <div class="section" id="exclude-files-when-extracting">
-<h4><span class="section-number">4.17.2.2. </span>Exclude Files When Extracting<a class="headerlink" href="#exclude-files-when-extracting" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">5.17.2.2. </span>Exclude Files When Extracting<a class="headerlink" href="#exclude-files-when-extracting" title="Permalink to this headline">¶</a></h4>
 <p>Exclude files matching patterns listed in <cite>exclude.txt</cite></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ touch exclude.txt
 $ vim exclude.txt
@@ -772,7 +773,7 @@ $ tar -zcvf /tmp/mybak.tar.gz -X exclude.txt /home/me
 </div>
 </div>
 <div class="section" id="download-upload-files-from-to-server">
-<h2><span class="section-number">4.18. </span>Download/Upload files from/to server<a class="headerlink" href="#download-upload-files-from-to-server" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.18. </span>Download/Upload files from/to server<a class="headerlink" href="#download-upload-files-from-to-server" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># download: remote -&gt; local</span>
 $ scp user@remote_host:remote_file local_file
 
@@ -801,7 +802,7 @@ $ scp mywebsite:/home/ubuntu/example.sql /tmp/example.sql
 </div>
 </div>
 <div class="section" id="what-is-the-difference-between-bash-profile-and-bashrc">
-<h2><span class="section-number">4.19. </span>what is the difference between .bash_profile and .bashrc<a class="headerlink" href="#what-is-the-difference-between-bash-profile-and-bashrc" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.19. </span>what is the difference between .bash_profile and .bashrc<a class="headerlink" href="#what-is-the-difference-between-bash-profile-and-bashrc" title="Permalink to this headline">¶</a></h2>
 <p>ref: <a class="reference external" href="https://apple.stackexchange.com/questions/51036/what-is-the-difference-between-bash-profile-and-bashrc">What is the difference between .bash_profile and .bashrc?</a></p>
 <p><code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> is executed for login shells, while <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> is executed for interactive non-login shells.</p>
 <p>When you login (type username and password) via console, either sitting at the machine, or remotely via ssh: .bash_profile is executed to configure your shell before the initial command prompt.</p>
@@ -809,7 +810,7 @@ $ scp mywebsite:/home/ubuntu/example.sql /tmp/example.sql
 <p>On OS X, Terminal by default runs a login shell every time, so this is a little different to most other systems, but you can configure that in the preferences.</p>
 </div>
 <div class="section" id="how-to-execute-a-bash-script-at-system-startup-shutdown-reboot">
-<h2><span class="section-number">4.20. </span>How to execute a bash script at system Startup/Shutdown/Reboot<a class="headerlink" href="#how-to-execute-a-bash-script-at-system-startup-shutdown-reboot" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.20. </span>How to execute a bash script at system Startup/Shutdown/Reboot<a class="headerlink" href="#how-to-execute-a-bash-script-at-system-startup-shutdown-reboot" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ref</dt>
 <dd class="field-odd"><p><a class="reference external" href="http://www.upubuntu.com/2015/08/how-to-executerun-bash-script-at-system.html">http://www.upubuntu.com/2015/08/how-to-executerun-bash-script-at-system.html</a></p>
@@ -823,12 +824,12 @@ $ scp mywebsite:/home/ubuntu/example.sql /tmp/example.sql
 </ol>
 </div>
 <div class="section" id="check-the-size-of-a-folder">
-<h2><span class="section-number">4.21. </span>Check the size of a folder<a class="headerlink" href="#check-the-size-of-a-folder" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.21. </span>Check the size of a folder<a class="headerlink" href="#check-the-size-of-a-folder" title="Permalink to this headline">¶</a></h2>
 <p>ref: <a class="reference external" href="https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line">https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line</a></p>
 <p>Jump to the directory, type: <code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-sh</span></code> and wait for results.</p>
 </div>
 <div class="section" id="install-ubuntu-18-04-1-lts-with-kernel-4-19">
-<h2><span class="section-number">4.22. </span>Install Ubuntu 18.04.1 LTS with Kernel 4.19<a class="headerlink" href="#install-ubuntu-18-04-1-lts-with-kernel-4-19" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.22. </span>Install Ubuntu 18.04.1 LTS with Kernel 4.19<a class="headerlink" href="#install-ubuntu-18-04-1-lts-with-kernel-4-19" title="Permalink to this headline">¶</a></h2>
 <p>This guide shows how to install</p>
 <ol class="arabic simple">
 <li><p>Ubuntu 18.04.01 LTS Bionic with update-to-date kernel 4.19,</p></li>
@@ -976,10 +977,10 @@ pkg-config --modversion opencv
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ssh.html" class="btn btn-neutral float-right" title="5. SSH" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ssh.html" class="btn btn-neutral float-right" title="6. SSH" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mac.html" class="btn btn-neutral float-left" title="3. Mac" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="centos.html" class="btn btn-neutral float-left" title="4. CentOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

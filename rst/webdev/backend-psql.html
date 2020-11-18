@@ -100,18 +100,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../unix/android.html">1. Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unix/docker.html">2. Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unix/mac.html">3. Mac</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ubuntu.html">4. Ubuntu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ssh.html">5. SSH</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/zsh-shell.html">6. Zsh Shell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/supervisor.html">7. Supervisor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/ports.html">8. Ports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/git.html">9. Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/svn.html">10. SVN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/anaconda.html">11. Anaconda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/vim.html">12. Vim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/htcondor.html">13. HTCondor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/opencv.html">14. OpenCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unix/input-method.html">15. Input Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/centos.html">4. CentOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ubuntu.html">5. Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ssh.html">6. SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/zsh-shell.html">7. Zsh Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/supervisor.html">8. Supervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/ports.html">9. Ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/git.html">10. Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/svn.html">11. SVN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/anaconda.html">12. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/vim.html">13. Vim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/htcondor.html">14. HTCondor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/opencv.html">15. OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unix/input-method.html">16. Input Method</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Video Coding</span></p>
 <ul>
@@ -151,6 +152,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#enter-psql-from-ubuntu-ubuntu">6.3.4. Enter psql from ubuntu&#64;ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-database-from-postgres-ubuntu">6.3.5. Create database from postgres&#64;ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exit">6.3.6. Exit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#for-centos">6.4. For CentOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">6.4.1. Installation</a></li>
 </ul>
 </li>
 </ul>
@@ -269,24 +274,24 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">-U</span> <span class="pre">postgres</span></code>: Logs me in as the postgres user.</p></li>
 <li><p>At <a class="reference internal" href="#label-of-postgresql-basics-3"><span class="std std-numref">Fig. 6.1</span></a> you can see the first argument to <code class="docutils literal notranslate"><span class="pre">psql</span></code> is the name of database (it gives <code class="docutils literal notranslate"><span class="pre">-d</span></code> option by default, original command is <code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">-d</span> <span class="pre">postgres</span></code>), the user logged in is still the default user. Note that we can use <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">current_user</span></code> and <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">current_database()</span></code> to get current user and database currently being used by postgreSQL interactive shell.</p></li>
 </ol>
-<div class="figure align-default" id="id1">
+<div class="figure align-default" id="id2">
 <span id="label-of-postgresql-basics-3"></span><a class="reference internal image-reference" href="../../_images/postgresql_basics_3.png"><img alt="postgresql_basics_3" src="../../_images/postgresql_basics_3.png" style="width: 345.0px; height: 246.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Login to postgreSQL interactive shell with <strong>default user</strong> and the database named <strong>postgres</strong>.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Login to postgreSQL interactive shell with <strong>default user</strong> and the database named <strong>postgres</strong>.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>There is a database named “postgres” in every default installation. (by <code class="docutils literal notranslate"><span class="pre">initdb</span></code> command, which is used to create the first database, it doesn’t have your username as any database name. It has a database named <code class="docutils literal notranslate"><span class="pre">postgres</span></code>. – <a class="reference external" href="https://www.postgresql.org/docs/9.3/static/manage-ag-createdb.html">The first database is always created by the initdb command when the data storage area is initialized. This database is called postgres.</a>.)</p></li>
 <li><p>By <code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">--help</span></code>, when you didn’t set options for database name (without <code class="docutils literal notranslate"><span class="pre">-d</span></code> option) it would be your username, if you didn’t do <code class="docutils literal notranslate"><span class="pre">-U</span></code>, the database username would be your username too, etc. This is why when you simply use <code class="docutils literal notranslate"><span class="pre">psql</span></code>, you will be logged in as the user <code class="docutils literal notranslate"><span class="pre">pharrell</span></code> and the database <code class="docutils literal notranslate"><span class="pre">pharrell</span></code>. See <a class="reference internal" href="#label-of-postgresql-basics-5"><span class="std std-numref">Fig. 6.2</span></a></p></li>
 </ol>
-<div class="figure align-default" id="id2">
+<div class="figure align-default" id="id3">
 <span id="label-of-postgresql-basics-5"></span><a class="reference internal image-reference" href="../../_images/postgresql_basics_5.png"><img alt="postgresql_basics_5" src="../../_images/postgresql_basics_5.png" style="width: 305.0px; height: 287.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Login to postgreSQL interactive shell with <strong>default user</strong> and <strong>default database</strong>.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Login to postgreSQL interactive shell with <strong>default user</strong> and <strong>default database</strong>.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="arabic simple" start="6">
 <li><p>See <a class="reference internal" href="#label-of-postgresql-basics-6"><span class="std std-numref">Fig. 6.3</span></a> usage of <code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">-d</span> <span class="pre">&lt;dbname&gt;</span> <span class="pre">-U</span> <span class="pre">&lt;username&gt;</span></code></p></li>
 </ol>
-<div class="figure align-default" id="id3">
+<div class="figure align-default" id="id4">
 <span id="label-of-postgresql-basics-6"></span><a class="reference internal image-reference" href="../../_images/postgresql_basics_6.png"><img alt="postgresql_basics_6" src="../../_images/postgresql_basics_6.png" style="width: 425.0px; height: 251.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Login to postgreSQL interactive shell with specified username and specified database name.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Login to postgreSQL interactive shell with specified username and specified database name.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="arabic simple" start="7">
 <li><p>To list the databases,  type <code class="docutils literal notranslate"><span class="pre">\list</span></code> or <code class="docutils literal notranslate"><span class="pre">\l</span></code> in postgreSQL interactive shell. (Owner of the database always has all privileges. And afterwards we can add more privileges on the database to other users/groups. Those are listed with the <code class="docutils literal notranslate"><span class="pre">\l</span></code> command.)</p></li>
@@ -432,14 +437,14 @@ $ python manage.py migrate
 <div class="section" id="enable-remote-access">
 <h3><span class="section-number">6.3.2. </span>Enable remote access<a class="headerlink" href="#enable-remote-access" title="Permalink to this headline">¶</a></h3>
 <p>1: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nano</span> <span class="pre">/etc/postgresql/9.6/main/postgresql.conf</span></code>, modify contents shown in <a class="reference internal" href="#enable-remote-access-1"><span class="std std-numref">Fig. 6.4</span></a>.</p>
-<div class="figure align-default" id="id4">
+<div class="figure align-default" id="id5">
 <span id="enable-remote-access-1"></span><a class="reference internal image-reference" href="../../_images/remote-access-1.png"><img alt="remote-access-1" src="../../_images/remote-access-1.png" style="width: 458.0px; height: 66.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Contents to modify in step 1</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Contents to modify in step 1</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <p>2: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nano</span> <span class="pre">/etc/postgresql/9.6/main/pg_hba.conf</span></code>, modify contents shown in <a class="reference internal" href="#enable-remote-access-2"><span class="std std-numref">Fig. 6.5</span></a>.</p>
-<div class="figure align-default" id="id5">
+<div class="figure align-default" id="id6">
 <span id="enable-remote-access-2"></span><a class="reference internal image-reference" href="../../_images/remote-access-2.png"><img alt="remote-access-2" src="../../_images/remote-access-2.png" style="width: 429.0px; height: 82.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Contents to modify in step 2</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Contents to modify in step 2</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <p>3: Restart postgreSQL, MUST use <code class="docutils literal notranslate"><span class="pre">sudo</span></code>.</p>
 <p><strong>stop</strong>:</p>
@@ -479,6 +484,23 @@ Password: &lt;your-password&gt;
 <div class="section" id="exit">
 <h3><span class="section-number">6.3.6. </span>Exit<a class="headerlink" href="#exit" title="Permalink to this headline">¶</a></h3>
 <p>Type <code class="docutils literal notranslate"><span class="pre">\q</span></code> or hit <em>ctrl</em> + <em>z</em>, or <em>ctrl</em> + <em>d</em></p>
+</div>
+</div>
+<div class="section" id="for-centos">
+<h2><span class="section-number">6.4. </span>For CentOS<a class="headerlink" href="#for-centos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">6.4.1. </span>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://yum.postgresql.org/13/redhat/rhel-7-x86_64/repoview/postgresqldbserver13.group.html">Postgresql Database server 13 pgdg download page</a>, use wget to download all required rpm and yum install missing packages.</p></li>
+<li><p>run below commands.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo /usr/pgsql-13/bin/postgresql-13-setup initdb
+sudo systemctl start postgresql-13
+sudo systemctl <span class="nb">enable</span> postgresql-13
+sudo -i -u postgres  <span class="c1"># switch to postgres user</span>
+psql <span class="c1"># enter console</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
