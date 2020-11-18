@@ -1,7 +1,7 @@
 CentOS
 ======
 
-Check centos version
+Check CentOS version
 --------------------
 
 ``cat /etc/*elease``
