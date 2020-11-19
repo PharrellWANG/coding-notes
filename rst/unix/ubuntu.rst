@@ -1,6 +1,28 @@
 Ubuntu
 ======
 
+curl usage
+----------
+
+.. code-block:: bash
+
+    # POST multipart/form-data to backend
+    # use absolute path
+    curl -v -F 'file=@/root/test.pdf' -X POST -H "Content-Type: multipart/form-data" http://localhost:4012/api/attachment/upload
+    # use related path
+    curl -v -F 'file=@test.pdf' -X POST -H "Content-Type: multipart/form-data" http://localhost:6012/api/attachment/upload
+
+    # GET file, download it
+    curl -v http://localhost:6012/api/attachment/download -o drogon.jpg
+
+find file globally by name
+--------------------------
+
+.. code-block:: bash
+
+    find / -type f -name test.pdf
+
+
 Setup Proxy for Apt Install
 ---------------------------
 
