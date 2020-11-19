@@ -164,9 +164,17 @@ Explain:
 
 .. code-block:: bash
 
-    $ rsync -av --progress <user-name>@<host-ip>:/home/<user-name>/<folder-to-copy> /Users/<user-name>/Downloads
+    # copy from remote to local
+    $ rsync -av --progress <user-name>@<host-ip>:/home/<user-name>/<folder-to-copy> /Users/<user-name>/Downloads/
+    # <folder-to-copy> will be copied to ``Downloads`` folder.
+    
+    # copy from entire folder to remote, 
+    # note no trailing slash after the path specified for local machine:
+    $ rsync -av --progress /Users/<user-name>/Downloads/<folder-to-copy> <user-name>@<host-ip>:/home/<user-name>/downloads/
 
-<folder-to-copy> will be copied to ``Downloads`` folder.
+    # if remote ssh on a port other than 22, specify port using -e option:
+    $ rsync -av --progress -e "ssh -p 2222" /Users/<user-name>/Downloads/<folder-to-copy> <user-name>@<host-ip>:/home/<user-name>/downloads/
+
 
 See `rsync manual page <https://linux.die.net/man/1/rsync>`_.
 
