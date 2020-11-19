@@ -15,7 +15,7 @@ Install GCC 10.2
     tar zxvf gcc-10.2*
     
     echo "Installing dependencies..."
-    yum -y install gmp-devel mpfr-devel libmpc-devel
+    yum -y install gmp-devel mpfr-devel libmpc-devel gcc-c++
     
     build_dir=gcc-10.2.0-build
     mkdir $build_dir && cd $build_dir

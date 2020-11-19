@@ -415,10 +415,18 @@ $ find . -name <span class="s2">&quot;*.csv&quot;</span> -type f -exec cp <span 
 <li><p>You can use <code class="docutils literal notranslate"><span class="pre">--exclude</span></code> multiple times, you can also just use it once.</p></li>
 </ol>
 <p><strong>Usage #2</strong>: Use <code class="docutils literal notranslate"><span class="pre">rsync</span></code> to <em>remotely</em> push/pull files/folders.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rsync -av --progress &lt;user-name&gt;@&lt;host-ip&gt;:/home/&lt;user-name&gt;/&lt;folder-to-copy&gt; /Users/&lt;user-name&gt;/Downloads
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># copy from remote to local</span>
+$ rsync -av --progress &lt;user-name&gt;@&lt;host-ip&gt;:/home/&lt;user-name&gt;/&lt;folder-to-copy&gt; /Users/&lt;user-name&gt;/Downloads/
+<span class="c1"># &lt;folder-to-copy&gt; will be copied to ``Downloads`` folder.</span>
+
+<span class="c1"># copy from entire folder to remote,</span>
+<span class="c1"># note no trailing slash after the path specified for local machine:</span>
+$ rsync -av --progress /Users/&lt;user-name&gt;/Downloads/&lt;folder-to-copy&gt; &lt;user-name&gt;@&lt;host-ip&gt;:/home/&lt;user-name&gt;/downloads/
+
+<span class="c1"># if remote ssh on a port other than 22, specify port using -e option:</span>
+$ rsync -av --progress -e <span class="s2">&quot;ssh -p 2222&quot;</span> /Users/&lt;user-name&gt;/Downloads/&lt;folder-to-copy&gt; &lt;user-name&gt;@&lt;host-ip&gt;:/home/&lt;user-name&gt;/downloads/
 </pre></div>
 </div>
-<p>&lt;folder-to-copy&gt; will be copied to <code class="docutils literal notranslate"><span class="pre">Downloads</span></code> folder.</p>
 <p>See <a class="reference external" href="https://linux.die.net/man/1/rsync">rsync manual page</a>.</p>
 </div>
 </div>
