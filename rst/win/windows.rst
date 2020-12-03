@@ -1,6 +1,24 @@
 Windows
 =======
 
+CMD command for removing file and dir
+-------------------------------------
+
+.. code-block:: bash
+
+    del # equivalent of linux ``rm``
+    deltree # equivalent of linux ``rm -r``
+
+    # remove directory quietly and recursively.
+    rd /s /q <dir-path> 
+
+    # use ``rd /?`` for help messagee
+    #/S      Removes all directories and files in the specified directory
+    #        in addition to the directory itself.  Used to remove a directory
+    #        tree.
+    #/Q      Quiet mode, do not ask if ok to remove a directory tree with /S
+
+
 change priority order of network adapters
 -----------------------------------------
 
