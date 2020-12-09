@@ -18,6 +18,16 @@ FFMPEG
 .. contents::
     :depth: 3
 
+
+NV12 to I420
+############
+Convert NV12 to yuv420p.
+
+.. code-block:: bash
+
+    ffmpeg -pix_fmt yuv420p -s 176x144 -i carphone_qcif.yuv -pix_fmt nv12 carphone_qcif_nv12.yuv
+    # "C:\Program Files\ffmpeg\bin\ffmpeg.exe" -s 1280x720 -pix_fmt nv12 -i "C:\SEQUENCES\witchhunter3\1800frames\nv12_witchhunter3_720p_30fps_8_yuv420p_BusyCanteenWalk.yuv" -pix_fmt yuv420p "C:\SEQUENCES\witchhunter3\1800frames\nv12_witchhunter3_720p_30fps_8_yuv420p_BusyCanteenWalk_i420.yuv"
+
 Convert MP4 to M4A
 ##################
 
