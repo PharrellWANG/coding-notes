@@ -43,6 +43,7 @@ My Coding Notes is organized into a couple sections:
 
    rst/ai/deep-learning
    rst/ai/tensorflow
+   rst/ai/pytorch
 
 
 .. _unix:

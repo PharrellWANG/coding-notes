@@ -9,14 +9,25 @@ Coding Notes
 
 Development
 -----------
-
 .. tip:: Setup the Python virtualenv first. Dependencies are listed in *requirements.txt*
+
+Unix
+~~~~
 
 Type below command in Terminal then press *Enter*:
 
 .. code-block:: bash
 
     . ./run.sh
+
+Windows
+~~~~~~~
+
+.. code-block:: bat
+
+    conda activate sphinx
+    cd C:\Users\15113\repo\coding-notes
+    call run.bat
 
 Deployment
 ----------
