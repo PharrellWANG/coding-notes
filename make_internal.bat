@@ -26,6 +26,11 @@ if errorlevel 9009 (
 	rem exit /b 1
 )
 
+echo ==================
+echo %1
+echo %0%
+echo ==================
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 echo "succeeded, go to end"
 goto end
