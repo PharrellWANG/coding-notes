@@ -18,6 +18,10 @@ FFMPEG
 .. contents::
     :depth: 3
 
+webp to jpg
+###########
+
+``ffmpeg -i some.webp some.jpg``
 
 NV12 to I420
 ############

@@ -1,6 +1,34 @@
 Deep Learning
 =============
 
+Confusion Matrix
+----------------
+By definition a confusion matrix :math:`C` is such that :math:`C_{ij}` is equal to 
+the number of observations known to be in group :math:`i` and predicted to be in group :math:`j`.
+
+References 
+~~~~~~~~~~
+1. `sklearn.metrics.confusion_matrix <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html>`_
+
+Object Detection
+----------------
+13 Dec 2020
+
+Evaluation Metrics
+~~~~~~~~~~~~~~~~~~
+
+**mAP** : mean average precision.
+
+To evaluate object detection models like R-CNN and YOLO, the mean average precision (mAP) is used. 
+The mAP compares the ground-truth bounding box to the detected box and returns a score. 
+The higher the score, the more accurate the model is in its detections.
+
+
+References
+~~~~~~~~~~
+
+1. `Evaluating object detection models using mean average precision (mAP) <https://blog.paperspace.com/mean-average-precision/>`_
+
 Classification
 --------------
 
@@ -53,6 +81,13 @@ such as **Precision**:eq:`classification_precision` and **Recall**:eq:`classific
 
 Precision answers the question of **what proportion of positive identifications was actually correct**. |br|
 Recall answers the question of **what proportion of actual positives was identified correctly**.
+
+.. tip::
+    The higher the precision, the more confident the model is when it classifies a sample as Positive. 
+
+    The higher the recall, the more positive samples the model correctly classified as Positive.
+
+    When a model has high recall but low precision, then the model classifies most of the positive samples correctly but it has many false positives (i.e. classifies many Negative samples as Positive). When a model has high precision but low recall, then the model is accurate when it classifies a sample as Positive but it may classify only some of the positive samples.
 
 If model A has better precision and better recall than model B, then model A is probably better.
 
