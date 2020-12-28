@@ -28,13 +28,13 @@ if errorlevel 9009 (
 	echo.http://sphinx-doc.org/
 	rem exit /b 1
 )
-%SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %0%
+%SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 echo "succeeded, go to end"
 goto end
 
 :help
 echo "help"
-%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %0%
+%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 
 :end
 popd
