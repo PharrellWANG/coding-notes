@@ -18,6 +18,15 @@ FFMPEG
 .. contents::
     :depth: 3
 
+Transcoding
+###########
+
+Transcode mpeg2 to h264.
+
+.. code-block:: bash
+
+    timeit "ffmpeg -vcodec hevc -i C:\Users\15113\Downloads\7a490124-0-output001.ts -acodec copy -vcodec libx264 C:\Users\15113\Downloads\7a490124-0-output001.h264"``
+
 webp to jpg
 ###########
 
