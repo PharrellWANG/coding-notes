@@ -1,6 +1,21 @@
 Windows
 =======
 
+Limit CPU Cores to Use
+----------------------
+
+``0xAA`` (10101010) requests that your process run using processors 
+1, 3, 5 and 7, but not 0, 2, 4 or 6. Be sure to leave out the '0x' on 
+the command line.
+
+.. code-block:: bash
+
+    start /affinity AA app.exe
+    start /affinity 1 app.exe     # (only use CPU 0)
+    start /affinity 2 app.exe     # (only use CPU 1)
+    start /affinity 1F app.exe    # (only use CPUs 0, 1, 2, 3, and 4)
+
+
 CMD command for removing file and dir
 -------------------------------------
 

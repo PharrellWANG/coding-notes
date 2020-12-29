@@ -27,6 +27,11 @@ Transcode mpeg2 to h264.
 
     timeit "ffmpeg -vcodec hevc -i C:\Users\15113\Downloads\7a490124-0-output001.ts -acodec copy -vcodec libx264 C:\Users\15113\Downloads\7a490124-0-output001.h264"``
 
+    start /affinity AA timeit "ffmpeg -vcodec hevc -threads 1 -i input.ts -acodec copy -vcodec libx264 -threads 24 C:\Users\15113\Downloads\out.h264"
+    # 1. use cpu core num: 1, 3, 5, 7 ( 0xAA-> 1010 1010 ).
+    # 2. dec thread 1, enc thread 24
+    # 3. measure elapsed time with timeit.bat in sh.git repo.
+
 webp to jpg
 ###########
 
