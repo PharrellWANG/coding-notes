@@ -25,7 +25,16 @@ Transcode mpeg2 to h264.
 
 .. code-block:: bash
 
+    # transcoding using default param
     timeit "ffmpeg -vcodec hevc -i C:\Users\15113\Downloads\7a490124-0-output001.ts -acodec copy -vcodec libx264 C:\Users\15113\Downloads\7a490124-0-output001.h264"``
+    
+    # faster transcoding with modified params
+    timeit "ffmpeg.exe -threads 1 -vcodec hevc -i ^
+    C:\Users\15113\Downloads\7a490124-0-output001.ts ^
+    -acodec copy -vcodec libx264 -threads 1 ^
+    -partitions +parti8x8+parti4x4 ^
+    -x264-params subme=2:trellis=0:weightp=1:mixed-refs=0 ^
+    -psnr C:\Users\15113\Downloads\7a49012bitstream.264"
 
     start /affinity AA timeit "ffmpeg -vcodec hevc -threads 1 -i input.ts -acodec copy -vcodec libx264 -threads 24 C:\Users\15113\Downloads\out.h264"
     # 1. use cpu core num: 1, 3, 5, 7 ( 0xAA-> 1010 1010 ).
