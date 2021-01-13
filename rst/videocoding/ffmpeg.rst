@@ -41,6 +41,9 @@ Transcode mpeg2 to h264.
     # 2. dec thread 1, enc thread 24
     # 3. measure elapsed time with timeit.bat in sh.git repo.
 
+    # transcode to change resolution # use ffprobe zhizhi.mp4 to inspect video resolution
+    ffmpeg -i zhizhi.mp4 -vf scale=1920:-2 -c:v libx264 -preset slow -crf 22 -c:a copy zhizhioutput.mp4
+
 webp to jpg
 ###########
 
