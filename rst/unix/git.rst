@@ -18,6 +18,30 @@ Git
 .. contents::
     :depth: 3
 
+Push Repo
+#########
+
+Push existing folder:
+
+.. code-block:: bash
+
+    cd existing_folder
+    git init
+    git remote add origin git@gitlab.com:pharrell/todelete.git
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin master
+
+Push existing git repo:
+
+.. code-block:: bash
+
+    cd existing_repo
+    git remote rename origin old-origin
+    git remote add origin git@gitlab.com:pharrell/todelete.git
+    git push -u origin --all
+    git push -u origin --tags
+
 Git Workflow for Feature Branches
 #################################
 
