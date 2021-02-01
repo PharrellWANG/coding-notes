@@ -18,6 +18,20 @@ Git
 .. contents::
     :depth: 3
 
+Git update from forked origin
+#############################
+
+.. code-block:: bash
+
+    # step 1: add remote
+    git remote add upstream https://github.com/original-repo/goes-here.git
+    # step 2: fetch all branches of remote upstrea,
+    git fetch upstream
+    # step 3: rewrite your mater with upstream's master using git rebase
+    git rebase upstream/master
+    # step 4: push updates, you may need to use '--force'
+    git push origin master --force
+
 Push Repo
 #########
 
