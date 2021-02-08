@@ -168,9 +168,6 @@ Note that the second method is compulsary if the link is to be found in an exter
 .. note:: Note that if you use the ``ref`` role, the final underscore is not required anymore.
 
 
-
-
-
 List and bullets
 ================
 

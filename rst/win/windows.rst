@@ -1,6 +1,13 @@
 Windows
 =======
 
+Concat Binary Files
+-------------------
+
+.. code-block:: bash
+
+    COPY /B file1.bin + file2.bin file_out.bin
+
 Limit CPU Cores to Use
 ----------------------
 

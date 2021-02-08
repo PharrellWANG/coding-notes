@@ -18,6 +18,14 @@ FFMPEG
 .. contents::
     :depth: 3
 
+
+nv12 to mp4
+###########
+
+.. code-block:: bash
+
+    timeit "ffmpeg -y -f rawvideo -pix_fmt nv12 -s:v 1280x720 -r 25 -i E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.yuv -c:v libx264 E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.mp4"``
+
 Transcoding
 ###########
 
