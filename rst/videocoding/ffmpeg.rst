@@ -18,13 +18,34 @@ FFMPEG
 .. contents::
     :depth: 3
 
+FFMPEG get help
+###############
+
+.. code-block:: bash
+
+    # linux
+    ffmpeg -hide_banner -h encoder=hevc_nvenc | xclip -sel clip
+    # windows
+    ffmpeg -hide_banner -h encoder=h264_nvenc
 
 nv12 to mp4
 ###########
 
 .. code-block:: bash
 
-    timeit "ffmpeg -y -f rawvideo -pix_fmt nv12 -s:v 1280x720 -r 25 -i E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.yuv -c:v libx264 E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.mp4"``
+    # -----------------
+    # libx264
+    # -----------------
+    timeit "C:\Users\15113\utils\ffmpeg-4.3.2-2021-02-27-full_build\bin\ffmpeg.exe -y -f rawvideo -pix_fmt nv12 -s:v 1280x720 -r 25 -i E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.yuv -c:v libx264 E:\sequences\00_Fortnight\fortnight_1280x720_60fps_8_0635_nv12_yuv420pUVI_GrassMapWoodStaticSceneChange.mp4"``
+
+    # -----------------
+    # nvenc (116fps for 4k)
+    # -----------------
+    # complex version:
+    C:\Users\15113\utils\ffmpeg-4.3.2-2021-02-27-full_build\bin\ffmpeg.exe -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_xxxx_nv12_yuv420pUVI_Jump.yuv -c:v h264_nvenc -b:v 8M -gpu 1 E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_xxxx_nv12_yuv420pUVI_Jump.mp4
+    # simplified version:
+    ffmpeg -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i input.yuv -c:v h264_nvenc -b:v 8M -gpu 1 out.mp4 # specify to use the second gpu.
+
 
 Transcoding
 ###########
