@@ -35,7 +35,7 @@ nv12 to mp4
 
     # first make sure you ffmpeg has nvenc enabled
     ffmpeg -hide_banner -h encoder=h264_nvenc
-    
+
     # -----------------
     # libx264
     # -----------------
@@ -45,9 +45,14 @@ nv12 to mp4
     # nvenc (116fps for 4k)
     # -----------------
     # complex version:
-    ffmpeg -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_xxxx_nv12_yuv420pUVI_Jump.yuv -c:v h264_nvenc -b:v 8M -gpu 1 E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_xxxx_nv12_yuv420pUVI_Jump.mp4
+    ffmpeg -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxxxx.yuv -c:v h264_nvenc -b:v 8M -gpu 1 E:\sequences\raw\fortnight_4k\fortnight_3840x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxxxx.mp4
     # simplified version:
     ffmpeg -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i input.yuv -c:v h264_nvenc -b:v 8M -gpu 1 out.mp4 # specify to use the second gpu.
+    # with frame index watermarker
+    ffmpeg -y -vsync 0 -pix_fmt nv12 -s 1920x1080 -i in.yuv -c:v h264_nvenc -b:v 30M -gpu 1 -vf "drawtext=fontfile=simfang.ttf: text=%{n}: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000099" out.mp4
+
+    # h264 to mp4
+    ffmpeg  -hwaccel cuda -y -i E:\sequences\mp4_4k\fortnight_4096x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxx0.h264 -c:v copy -f mp4 E:\sequences\mp4_4k\fortnight_4096x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxx0.mp4
 
 
 Transcoding
