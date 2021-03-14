@@ -49,7 +49,7 @@ nv12 to mp4
     # simplified version:
     ffmpeg -y -vsync 0 -pix_fmt nv12 -s 3840x2160 -i input.yuv -c:v h264_nvenc -b:v 8M -gpu 1 out.mp4 # specify to use the second gpu.
     # with frame index watermarker
-    ffmpeg -y -vsync 0 -pix_fmt nv12 -s 1920x1080 -i in.yuv -c:v h264_nvenc -b:v 30M -gpu 1 -vf "drawtext=fontfile=simfang.ttf: text=%{n}: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000099" out.mp4
+    ffmpeg -y -pix_fmt nv12 -s 1920x1080 -r 60 -i in.yuv -c:v h264_nvenc -b:v 30M -gpu 1 -vf "drawtext=fontfile=simfang.ttf: text=%{n}: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000099" -r 60 out.mp4
 
     # h264 to mp4
     ffmpeg  -hwaccel cuda -y -i E:\sequences\mp4_4k\fortnight_4096x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxx0.h264 -c:v copy -f mp4 E:\sequences\mp4_4k\fortnight_4096x2160_60fps_8_numframesxx_nv12_yuv420pUVI_scenexxxx0.mp4
